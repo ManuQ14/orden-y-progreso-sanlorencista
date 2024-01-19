@@ -40,7 +40,7 @@ export const notas = [
       "43-miniatura-primera-reunion-de-asamblea-de-representantes-de-socios",
     writer: "Orden y Progreso Sanlorencista",
     content:
-      "Este último jueves, se llevó a cabo la primer Asamblea de Representantes de Socios en el polideportivo Roberto Pando. Dicha asamblea, es la primera de una nueva gestión de gobierno y en ella se llevaron a cabo las nuevas designaciones de integrantes de su mesa directiva y de sus comisiones.",
+      "Este último jueves, se llevó a cabo la primer Asamblea de Representantes de Socios en el polideportivo Roberto Pando. Dicha asamblea, es la primera de una nueva gestión de gobierno y en ella se llevaron a cabo las nuevas designaciones de integrantes de su mesa directiva y de sus comisiones .",
     imagenDos: "Foto2",
     parrafoUno: `Este último jueves , se llevó a cabo la primer Asamblea de Representantes de Socios en el polideportivo Roberto Pando. Dicha asamblea, es la primera de una nueva gestión de gobierno y en ella se llevaron a cabo las nuevas designaciones de integrantes de su mesa directiva y de sus comisiones. Muchos asambleístas oriundos del interior del país se acercaron al Pando para estar presente y poder participar de la reunión. Pablo García Lago fue quien representó a la Comisión Directiva.`,
     parrafoDos: `La mesa directiva de la Asamblea quedó conformada por Daniel Matos como presidente; Ulises Darío Morales como vicepresidente; Valeria Leonor Carta Moglietta como secretaria; y Nicolas Pellegrini como secretario de actas (Orden y Progreso Sanlorencista); en cuanto a los vocales fueron Cristian Fabian López, Patricio Ariel León (Orden y Progreso Sanlorencista), y Alberto Martin Coello.`,
