@@ -31,6 +31,28 @@
 
 export const notas = [
   {
+    id: 43,
+    title: "Primera Reunión de la Asamblea de Representantes de Socios",
+    url: "primera-reunion-de-la-asamblea-de-representantes-de-socios",
+    date: "19/01/2024",
+    nameImage: "Foto1",
+    miniatureImage:
+      "43-miniatura-primera-reunion-de-asamblea-de-representantes-de-socios",
+    writer: "Orden y Progreso Sanlorencista",
+    content:
+      "Este último jueves, se llevó a cabo la primer Asamblea de Representantes de Socios en el polideportivo Roberto Pando. Dicha asamblea, es la primera de una nueva gestión de gobierno y en ella se llevaron a cabo las nuevas designaciones de integrantes de su mesa directiva y de sus comisiones.",
+    imagenDos: "Foto2",
+    parrafoUno: `Este último jueves, se llevó a cabo la primer Asamblea de Representantes de Socios en el polideportivo Roberto Pando. Dicha asamblea, es la primera de una nueva gestión de gobierno y en ella se llevaron a cabo las nuevas designaciones de integrantes de su mesa directiva y de sus comisiones. Muchos asambleístas oriundos del interior del país se acercaron al Pando para estar presente y poder participar de la reunión. Pablo García Lago fue quien representó a la Comisión Directiva.`,
+    parrafoDos: `La mesa directiva de la Asamblea quedó conformada por Daniel Matos como presidente; Ulises Darío Morales como vicepresidente; Valeria Leonor Carta Moglietta como secretaria; y Nicolas Pellegrini como secretario de actas (Orden y Progreso Sanlorencista); en cuanto a los vocales fueron Cristian Fabian López, Patricio Ariel León (Orden y Progreso Sanlorencista), y Alberto Martin Coello.`,
+    parrafoTres: `Además, se conformaron Comisiones Permanentes de Poderes y Reglamentos cuyos integrantes serán José Walter Blanco, Diego Hernán Pérez Martoni, Axel Schale, Omar Rois (Orden y Progreso Sanlorencista), Cardesin y Rubén Daniel Iglesias.`,
+    parrafoCuatro: `En cuanto a a la Comisión de Presupuesto, serán miembros de la misma: Mateo Schale, Valeria Leonor Carta Moglietta, Gustavo Fernandez Galiana, Santiago Fernandez Quiroz (Orden y Progreso Sanlorencista) y Luis Fernando Navarro.`,
+    parrafoCinco: `La Comisión de Ética y Disciplina también tuvo las siguientes designaciones: Juan Manuel Diaz, Carla Marlene Mansilla, Vanesa Soledad Sanchez Hermida, Noelia Soledad Walter (Orden y Progreso Sanlorencista), y Magalí Vazquez Ardetti.`,
+    parrafoSeis: `Siguiendo con la reunión de la Asamblea de representantes de socios se conformaron dos comisiones más de las cuales una de ella es muy importante.`,
+    parrafoSiete: `Comisión por la Vuelta a Boedo: cuyo integrante y representante de la Agrupación Orden y Progreso Sanlorencista es Jose Ignacio Casal, también participarán Jorge Hector Romano, María de Los Angeles Pereyra, Daniel Roberto Matos y Gabriel Paletta.`,
+    parrafoOcho: `Por último, la Comisión de Obras e Infraestructura tendrá como integrante a Lucas Damián Palumbo de Orden y Progreso Sanlorencista; el resto de la comisión la integrarán Martín Adrián Guin, Claudio Tosti, Juan Pablo Garibotto y Guillermo Buzzo.`,
+    parrafoNueve: `En el final de la asamblea, se acordó emitir un comunicado ratificando la posición de la comisión directiva sobre el articulo 8 del estatuto del club. Dicho artículo hace mención a la negativa de convertir la asociación civil en sociedad anónima o cualquier otro tipo de encuadre societario que implique la intromisión de capitales privados en la administración y gobierno del club, tampoco se permitirá resolver la disolución del CASLA, mientras haya cien socios con derecho a voto dispuestos a sostenerla. Esta medida tomada por la asamblea fue por unanimidad y se celebró con aplausos de sus integrantes.`,
+  },
+  {
     id: 42,
     title: "Segunda reunión de Comisión Directiva del año",
     url: "tercer-reunion-comision-directiva",
@@ -47,7 +69,7 @@ export const notas = [
     parrafoSeis: `El presidente Marcelo Moretti informó que se enviarán cartas documento a quienes no presenten documentación respaldatoria por obtención de los palcos. Al respecto, Sergio Constantino afirmó haber presentado la documentación correspondiente a sus palcos. En relación a los palcos, el secretario Pablo García Lago informó que se está pensando en implementar un cobro de expensas para los palcos.`,
     parrafoSiete: `Los abonos para las plateas y la copa libertadores fueron otros de los temas que tuvo lugar en la reunión. En relación a los abonos para plateas, al día de la fecha hay 9 mil abonados. En lo que respecta a la copa se esperan 10 mil.`,
     parrafoOcho: `También se informó de un canje con las empresas Telecom y Personal Flow para mejorar la comunicación en el Pedro Bidegain y así que los hinchas puedan acceder, entre otras cosas, a WI-FI.`,
-    parrafoNueve: `Por último, se puso en conocimiento una condonación de mutuos por parte de Carlos Abdo, y se brindó información de algunos aspectos contractuales. Sobre esto, Marcelo Culotta solicitó aprobar en Comisión Directiva los contratos firmados tratados en reuniones anteriores.`
+    parrafoNueve: `Por último, se puso en conocimiento una condonación de mutuos por parte de Carlos Abdo, y se brindó información de algunos aspectos contractuales. Sobre esto, Marcelo Culotta solicitó aprobar en Comisión Directiva los contratos firmados tratados en reuniones anteriores.`,
   },
   {
     id: 41,
