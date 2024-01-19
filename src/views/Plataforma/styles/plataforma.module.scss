@@ -1,0 +1,287 @@
+@import "../../../styles/variables";
+
+.header {
+  height: 540px;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  font-family: $gothamBold;
+}
+
+.ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ul a {
+  color: $azul;
+  transition: all 100ms;
+}
+
+a {
+  height: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+.ul .active {
+  transition: all 100ms;
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+.headerMobile {
+  display: none;
+}
+
+.mainContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 659px;
+}
+
+.mainTitle {
+  margin-top: 50px;
+}
+
+.mainContent {
+  display: flex;
+  flex-flow: column wrap;
+  width: 940px;
+  margin: auto;
+  justify-content: center;
+  height: 68vh;
+}
+
+.mainTitlePlatform {
+  font-family: $steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: $azul;
+  margin-right: 24px;
+  display: flex;
+  margin-top: 65px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #12233c;
+  text-decoration: none;
+}
+
+.buttonToPDF {
+  width: 500px;
+  height: 100px;
+  background-color: $rojo;
+  color: white;
+  margin: auto;
+  border-bottom: 100px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms;
+}
+
+.buttonToPDF:hover {
+  color: white;
+  border: none;
+  animation: none;
+  list-style: none;
+  transform: scale(105%);
+}
+
+//Responsive
+
+@media (max-width: 1069px) {
+  .valuesContainer {
+    width: 500px;
+    height: 410px;
+    margin-bottom: 70px;
+  }
+
+  .mainContainer {
+    width: 712px;
+  }
+
+  .contentBox {
+    width: 100%;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .redLine {
+    width: 100%;
+  }
+
+  .contentSection {
+    width: 100%;
+  }
+
+  .mainPhoto {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 789px) {
+  .valuesContainer {
+    width: 400px;
+    height: 825px;
+  }
+
+  .valuesList {
+    justify-content: center;
+  }
+}
+
+//Medida mobile
+
+@media (max-width: 659px) {
+  .navBar {
+    display: none;
+  }
+
+  .mainh1 {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+    width: 100vw;
+    height: 70px;
+  }
+
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
+  }
+
+  .escudoOyPMobile {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
+  }
+
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+    z-index: 10000;
+  }
+
+  .menuListMobile {
+    color: white;
+    font-family: $gothamBold;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .valuesContainer {
+    width: 100vw;
+  }
+
+  .valuesBox {
+    justify-content: center;
+  }
+
+  .mainContainer {
+    width: 90vw;
+  }
+
+  .mainPhoto {
+    height: 25vh;
+  }
+
+  .mainTitlePlatform {
+    color: $azul;
+    margin-top: 0px;
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    margin-bottom: 70px;
+  }
+
+  .mainContent {
+    width: 90%;
+    //height: 257px;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    /* background-image: url(../../../assets/images/PLAN-FOTO-MOBILE.jpg); */
+  }
+
+  /*  .buttonToPDF {
+    font-family: $gothamBook;
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: $rojo;
+    color: white !important;
+    text-decoration-color: white;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    text-align: left;
+    margin: 0;
+  } */
+
+  .buttonToPDF {
+    background-image: url(../../../assets/images/Boton.jpg);
+    background-repeat: no-repeat;
+    background-position-x: -9px;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1px;
+    color: $rojo;
+  }
+
+  /*  .containerPlatform{
+    background-color: $azul;
+  } */
+}

@@ -1,0 +1,923 @@
+@charset "UTF-8";
+@import url("../../../styles/_variables.scss");
+@font-face {
+  font-family: GothamBook;
+  /* src: url(../styles/fonts/GOTHAMBOOK.TTF) format('truetype'); */
+  src: url(./fonts/GothamBook.TTF) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.TTF) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Steelfish;
+  src: url(../styles/fonts/steelfishbd.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../styles/fonts/Poppins-Black.ttf) format("truetype");
+}
+header {
+  background-image: url(../../../assets/images/portadaViejoGasometro.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 32.5%;
+  background-color: #001A3D;
+  height: 446px;
+  /* display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.headerMobile {
+  display: none;
+}
+
+.coverDifuminado {
+  background: linear-gradient(180.1deg, #12233c 14.84%, rgba(18, 35, 60, 0.8) 45.22%, rgba(18, 35, 60, 0.75) 74.79%, rgba(18, 35, 60, 0.5) 99.13%);
+  background-size: cover;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #12233c;
+  margin: auto;
+  animation-name: scale;
+  animation-duration: 1s;
+}
+
+.escudoCarga {
+  width: 300px;
+  height: 300px;
+  animation-name: scale;
+  animation-duration: 1s;
+  background-color: none;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(115%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+.burgerMenu {
+  display: none;
+}
+
+.mainNewsContainer {
+  width: 940px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.mainNew {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.mainImageContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+}
+
+.mainNewImage {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.mainNewContent {
+  width: 540px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.principalNewTitle {
+  font-family: Steelfish;
+  color: #12233c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  margin-top: 70px;
+  color: #12233c;
+  text-align: left;
+}
+
+.noticiaContent {
+  font-family: GothamBook;
+  width: 500px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  margin-top: 30px;
+  color: #12233c;
+}
+
+.readMoreButton {
+  width: 220px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #bf1b27;
+  border: 1.5px solid #bf1b27;
+  border-radius: 20px;
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 300ms;
+  margin-top: 30px;
+}
+
+.readMoreButton:hover {
+  transform: scale(110%);
+  background-color: #a71721;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  /*el mt de la navBar es para el header de la plataforma de gobierno
+  borrar cuando vuelva a la normalidad
+  */
+  font-family: GothamBold;
+}
+
+.ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ul a {
+  color: white;
+  transition: all 100ms;
+}
+
+a {
+  height: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c20c0d;
+  border-bottom: 2px solid #c20c0d;
+}
+
+.ul .active {
+  transition: all 100ms;
+  color: #c20c0d;
+  border-bottom: 2px solid #c20c0d;
+}
+
+h2 {
+  font-family: Steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 84px;
+  color: white;
+  margin-top: 99.5px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* .planDeGobiernoButton {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  background: $rojo;
+
+  width: 22%;
+  height: 14%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 170px;
+  margin-left: -62%;
+  cursor: pointer;
+  transition: all 300ms;
+} */
+/* .planDeGobiernoButton:hover {
+  transform: scale(105%);
+  background-color: #a71721;
+} */
+/* .planDeGobiernoHeader {
+  width: 100%;
+  background: transparent;
+  height: 350px;
+  text-decoration: none !important;
+  animation: none;
+}
+
+.planDeGobiernoHeader:hover {
+  list-style: none;
+  text-decoration: none !important;
+  animation: none;
+  border: none;
+}
+ */
+.proposalsContainer {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.proposalTitleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.proposalSectionTitle {
+  font-family: Steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #12233c;
+}
+
+.proposalsBoxContainer {
+  width: 940px;
+  height: 240px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  transition: all 300ms;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  width: 295px !important;
+  margin-right: 20px;
+}
+
+.proposalBox {
+  width: 295px;
+  height: 231px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background: #f7f7f8;
+  border-radius: 10px;
+  margin-right: 20px;
+  justify-content: space-between;
+  transition: all 300ms;
+}
+
+.arrowRigth {
+  width: 60px;
+  height: 60px;
+}
+
+.proposalTitle {
+  font-family: GothamBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.4px;
+  line-height: 17px;
+  text-align: center;
+  color: #11223b;
+  width: 260px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  margin-top: 27px;
+}
+
+.proposalsContent {
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #11223b;
+  width: 260px;
+  height: 101px;
+}
+
+.proposalLinkButton {
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  margin-left: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: #c20c0d;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lastNewsContent {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 940px;
+  margin: auto;
+  margin-top: 125px;
+  margin-bottom: 90px;
+}
+
+.titlesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 4px;
+}
+
+.subtitleLastesNews {
+  font-family: Steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #12233c;
+}
+
+.seeMoreButton {
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #c20c0d;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.seeMoreButton:hover {
+  color: #12233c;
+}
+
+.newsContent {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 210px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-left: 7px;
+  transition: all 300ms;
+}
+
+.miniaturaNota {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  transition: all 300ms;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+
+.miniaturaNota:hover {
+  transform: scale(105%) !important;
+  border-radius: 5px;
+}
+
+#imageMiniatura {
+  z-index: -1;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#imageMiniatura:hover {
+  transform: scale(105%) !important;
+}
+
+.coverDifuminated {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(18, 35, 60, 0) 0%, rgba(18, 35, 60, 0.63) 42.5%, #12233c 87.29%);
+  transition: all 300ms;
+}
+
+/* .miniaturaTitle {
+  width: 250px;
+  height: 34px;
+  text-decoration: none;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: white;
+  margin-top: 135px;
+  margin-left: 6px;
+  z-index: 1;
+} */
+.miniaturaTitle {
+  width: 250px;
+  height: 34px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: white;
+  margin-top: 155px;
+  margin-left: 6px;
+  z-index: 1;
+}
+
+.proposalsContainerTablet {
+  display: none !important;
+}
+
+.tabletProposalBox {
+  display: none;
+}
+
+.tabletContainer {
+  display: none;
+}
+
+.tabletNewsContent {
+  display: none;
+}
+
+.proposalsContainerMobile {
+  display: none;
+}
+
+.mobileProposalBox {
+  display: none;
+}
+
+.mobileNewsContent {
+  display: none;
+}
+
+/* @media (max-width: 1440px) {
+  //Plan de Gobierno
+  .planDeGobiernoButton {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    font-size: 38px;
+    background: $rojo;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 240px;
+    margin-left: -860px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+} */
+/* @media (max-width: 1366px){
+  //Plan de Gobierno button
+  .planDeGobiernoButton {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    font-size: 38px;
+    background: $rojo;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 250px;
+    margin-left: -805px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+} */
+/* @media (max-width: 1280px){
+  //Plan de Gobierno button
+  .planDeGobiernoButton {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    font-size: 38px;
+    background: $rojo;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 255px;
+    margin-left: -725px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+} */
+@media (max-width: 1069px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .mainh1 {
+    font-size: 70px;
+  }
+  /*Los valores están en el nosotros.module.scss*/
+  .mainNewsContainer {
+    width: 550px;
+    height: 522px;
+    margin-bottom: 90px;
+  }
+  .mainNew {
+    display: flex;
+    flex-flow: column;
+  }
+  .mainImageContainer {
+    width: 100%;
+  }
+  .mainNewImage {
+    width: 100%;
+    height: 100%;
+  }
+  .mainNewContent {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .principalNewTitle {
+    width: 100%;
+    margin-top: 20px;
+    color: #12233c;
+  }
+  .noticiaContent {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .readMoreButton {
+    margin-top: 30px;
+  }
+  .proposalsContainer {
+    width: 550px;
+  }
+  .proposalsBoxContainer {
+    display: none !important;
+  }
+  .tabletContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .tabletProposalBox {
+    width: 265px;
+    height: 170px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .proposalTitle {
+    width: 95%;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .proposalsContent {
+    font-size: 14px;
+  }
+  .proposalLinkButton {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  .lastNewsContent {
+    width: 550px;
+    height: 500px;
+    display: flex;
+  }
+  .titlesContainer {
+    margin-bottom: 25px;
+  }
+  .newsContent {
+    display: none !important;
+  }
+  .tabletNewsContent {
+    display: flex;
+    flex-flow: row wrap;
+    width: 550px;
+    height: 160px;
+    justify-content: space-between;
+  }
+  .miniaturaNota {
+    width: 260px;
+    height: 160px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+  }
+  .coverDifuminated {
+    width: 265px;
+    height: 160px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #imageMiniatura {
+    width: 265px;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .miniaturaTitle {
+    margin-top: 0;
+    margin-bottom: 5px;
+    height: 60px;
+  }
+}
+@media (max-width: 789px) {
+  .mainNewsContainer {
+    margin-bottom: 120px;
+    height: 614px;
+  }
+  .mainNewContent {
+    align-items: center;
+  }
+  .principalNewTitle {
+    justify-content: center;
+  }
+  .noticiaContent {
+    justify-content: center;
+  }
+  .tabletContainer {
+    display: none;
+  }
+  .tabletNewsContent {
+    display: none;
+  }
+  .mobileNewsContent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+  .lastNewsContent {
+    height: 1194px;
+    width: 400px;
+    flex-flow: column;
+  }
+  .titlesContainer {
+    margin-bottom: 50px;
+  }
+  .miniaturaNota {
+    width: 400px;
+    height: 250px;
+  }
+  .coverDifuminated {
+    width: 400px;
+    height: 250px;
+  }
+  #imageMiniatura {
+    width: 400px;
+    height: 250px;
+  }
+  .miniaturaTitle {
+    width: 90%;
+    font-size: 18px;
+  }
+  .proposalsContainer {
+    height: 1295px;
+    width: 400px;
+  }
+  .proposalTitleContainer {
+    margin-bottom: 50px;
+  }
+  .mobileContainer {
+    display: flex;
+    height: 1200px;
+    flex-flow: column;
+    align-items: center;
+  }
+  .mobileProposalBox {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 250px;
+    background: #f7f7f8;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .proposalTitle {
+    margin: 0;
+    font-size: 17.4px;
+    margin-bottom: 30px;
+  }
+  .proposalsContent {
+    width: 90%;
+    font-size: 16px;
+  }
+  .proposalLinkButton {
+    margin: 0;
+  }
+}
+@media (max-width: 659px) {
+  header {
+    display: none;
+  }
+  .mainh1 {
+    display: none;
+  }
+  .headerMobile {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../assets/images/portadaViejoGasometro.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    /* background-position-y: 70%; */
+  }
+  .coverDifuminadoMobile {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180.1deg, #12233c 14.84%, rgba(18, 35, 60, 0.8) 45.22%, rgba(18, 35, 60, 0.75) 74.79%, rgba(18, 35, 60, 0.5) 99.13%);
+    background-size: cover;
+    height: 100%;
+  }
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
+  }
+  .escudoOyPMobile {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
+  }
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+  }
+  .menuListMobile {
+    color: white;
+    font-family: GothamBold;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .mainNewsContainer {
+    width: 90vw;
+  }
+  .proposalsContainer {
+    width: 90vw;
+  }
+  .proposalLinkButton {
+    margin-left: 105px;
+  }
+  .mobileProposalBox {
+    width: 90vw;
+  }
+  .lastNewsContent {
+    width: 90vw;
+    height: 100%;
+    margin-bottom: 230px;
+  }
+  .miniaturaNota {
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .mobileNewsContent {
+    width: 90vw;
+  }
+  .coverDifuminated {
+    width: 90vw;
+    height: 35vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .mainNewsContainer {
+    width: 90vw;
+  }
+  #imageMiniatura {
+    width: 90vw;
+    height: 35vh;
+    margin: 0px;
+  }
+  .miniaturaTitle {
+    width: 87vw;
+    margin-top: 0;
+    height: 15px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  .miniaturaTitle:hover {
+    transform: none;
+  }
+  .mainNewImage {
+    width: 90vw;
+    height: 35vh;
+  }
+  .plandeGobiernoClick {
+    transition: all 300ms;
+    background-color: transparent;
+    /*  width: 100%;
+    height: 780px; */
+    background-color: orange;
+    width: 300px;
+    height: 800px;
+  }
+  .hiddenPlanGobierno {
+    display: none;
+  }
+}/*# sourceMappingURL=home.module.css.map */

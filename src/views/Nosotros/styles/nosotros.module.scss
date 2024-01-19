@@ -1,0 +1,290 @@
+@import "../../../styles/variables";
+
+.header {
+  height: 540px;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  font-family: $gothamBold;
+}
+
+.ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ul a {
+  color: $azul;
+  transition: all 100ms;
+}
+
+a {
+  height: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+.ul .active {
+  transition: all 100ms;
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+//Nuestros valores section
+
+.valuesContainer {
+  width: 940px;
+  height: 213px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.valuesList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.valuesBox {
+  width: 220px;
+  height: 213px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.valuesImage {
+  width: 91px;
+  height: 91px;
+  margin-bottom: 15px;
+}
+
+.valuesText {
+  width: 192px;
+  height: 66px;
+  text-align: center;
+  font-family: $gothamBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.4px;
+  line-height: 119.7%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $azul;
+}
+
+#lastValueText {
+  margin-top: -10px;
+}
+
+//main section
+.mainContainer {
+  width: 940px;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+
+.contentBox {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.titleSection {
+  font-family: $steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: $azul;
+  margin-right: 24px;
+}
+
+.redLine {
+  margin-top: 10px;
+  width: 760px;
+}
+
+.contentSection {
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #202124;
+  margin-bottom: 25px;
+}
+
+.mainPhoto {
+  width: 940px;
+  height: 480px;
+
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+.primeroSanLorenzoSiempre {
+  display: inline;
+  font-family: $gothamBook;
+  font-weight: bold;
+  //line-height: 19px;
+  color: $rojo;
+}
+
+//Loading
+.loading {
+  width: 100%;
+  height: 100%;
+  background: $azul;
+}
+
+.escudoOyPMobile {
+  display: none;
+}
+
+.headerMobile {
+  display: none;
+}
+
+//Responsive
+
+@media (max-width: 1069px) {
+  .valuesContainer {
+    width: 500px;
+    height: 410px;
+    margin-bottom: 70px;
+  }
+
+  .mainContainer {
+    width: 712px;
+  }
+
+  .contentBox {
+    width: 100%;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .redLine {
+    width: 100%;
+  }
+
+  .contentSection {
+    width: 100%;
+  }
+
+  .mainPhoto {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 789px) {
+  .valuesContainer {
+    width: 400px;
+    height: 825px;
+  }
+
+  .valuesList {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 659px) {
+  .navBar {
+    display: none;
+  }
+
+  .mainh1 {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+    width: 100vw;
+    height: 70px;
+  }
+
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
+  }
+
+  .escudoOyPMobile {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
+  }
+
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+    z-index: 10000;
+  }
+
+  .menuListMobile {
+    color: white;
+    font-family: $gothamBold;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .valuesContainer {
+    width: 100vw;
+  }
+
+  .valuesBox {
+    justify-content: center;
+  }
+
+  .mainContainer {
+    width: 90vw;
+  }
+
+  .mainPhoto {
+    height: 25vh;
+  }
+}

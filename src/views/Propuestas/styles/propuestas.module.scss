@@ -1,0 +1,452 @@
+@import "../../../styles/variables";
+
+.header {
+  height: 540px;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: $gothamBold;
+}
+
+.ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ul a {
+  color: $azul;
+  transition: all 100ms;
+}
+
+a {
+  height: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+.ul .active {
+  transition: all 100ms;
+  color: $rojo;
+  border-bottom: 2px solid $rojo;
+}
+
+//Title de la sección
+.titleProposals {
+  font-family: $steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: $azul;
+  width: 940px;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+//Pagination
+
+//Contenedor de los botones de paginación
+.containerDespachos {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 100px;
+}
+
+.containerPaginationBox {
+  width: 280px;
+  height: 35px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+.containerPaginationBox li {
+  width: 35px !important;
+  height: 35px !important;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 35px;
+}
+
+.containerPaginationBox a {
+  width: 35px !important;
+  height: 35px !important;
+  border: 1px solid $azul;
+  border-radius: 20px;
+  color: $azul;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.containerPaginationBox a:hover {
+  color: $rojo;
+  border: 1px solid $rojo;
+}
+
+.navigationActive a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid $rojo;
+  border-radius: 20px;
+  color: $rojo !important;
+}
+
+.despachoBox {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.despachoTitle {
+  font-family: $gothamBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.4px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.despachoContent {
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+
+.buttonDespacho {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: $rojo;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.buttonDespacho:hover {
+  transform: scale(101%);
+  font-weight: bold;
+}
+
+//Despacho
+
+.despachoContainer {
+  display: flex;
+  width: 800px;
+  flex-flow: column wrap;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.despachoTitulo {
+  font-family: $steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: $azul;
+  margin-bottom: 100px;
+}
+
+.despachoFecha {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.despachoDestinatario {
+  width: 312px;
+  display: flex;
+  flex-flow: column;
+  height: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.introduccion {
+  margin-bottom: 12px;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.parrafosContainer {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: auto;
+  margin-bottom: 120px;
+}
+
+.parrafos {
+  width: 100%;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-indent: 5.5cm;
+  margin-bottom: 20px;
+}
+
+.firmaContainer {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  font-family: $gothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  //text-align: left;
+  text-indent: 5.5cm;
+}
+
+.sellosContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  font-weight: bold;
+  color: $azul;
+}
+
+.sello {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+}
+
+.escudoOyPMobile {
+  display: none;
+}
+
+.headerMobile {
+  display: none;
+}
+
+.socialMediaContainer {
+  width: 170px;
+  height: 60px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 90px;
+
+}
+
+.socialMediaIconsContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  width: 170px;
+  height: 30px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.shareIconsNews {
+  width: 30px;
+  height: 30px;
+}
+
+.iconsMedia {
+  margin-right: 15px;
+  transition: all 300ms;
+}
+
+.iconsMedia:hover {
+  border: none !important;
+  transform: scale(110%);
+}
+
+.shareText {
+  font-family: $gothamBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: $rojo;
+}
+
+//Responsive
+
+@media (max-width: 1069px) {
+  .titleProposals {
+    width: 712px;
+  }
+
+  .containerDespachos {
+    width: 712px;
+  }
+}
+
+@media (max-width: 659px) {
+  .navBar {
+    display: none;
+  }
+
+  .mainh1 {
+    display: none;
+  }
+
+  .headerMobile {
+    display: block;
+    width: 100vw;
+    height: 70px;
+  }
+
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
+  }
+
+  .escudoOyPMobile {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
+  }
+
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .menuListMobile {
+    color: white;
+    font-family: $gothamBold;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .titleProposals {
+    justify-content: center;
+    width: 256px;
+  }
+
+  .containerDespachos {
+    width: 90vw;
+  }
+
+  .despachoBox {
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 200px;
+  }
+
+  .despachoContainer {
+    width: 90vw;
+    //margin-bottom: 40px;
+    margin-top: 0px;
+  }
+
+  .despachoTitulo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 90vw;
+    text-align: left;
+  }
+
+  .despachoTitle {
+    line-height: 20px;
+  }
+
+  .titleProposals {
+    width: 90vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .parrafos {
+    text-indent: 0;
+  }
+
+  .firmaContainer {
+    text-indent: 0;
+  }
+
+  .firma {
+    text-indent: 0;
+  }
+
+  .sellosContainer {
+    width: 90vw;
+    height: 20vh;
+  }
+}

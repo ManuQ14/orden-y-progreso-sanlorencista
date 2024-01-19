@@ -1,0 +1,283 @@
+@font-face {
+  font-family: GothamBook;
+  /* src: url(../styles/fonts/GOTHAMBOOK.TTF) format('truetype'); */
+  src: url(./fonts/GothamBook.TTF) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.TTF) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Steelfish;
+  src: url(../styles/fonts/steelfishbd.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../styles/fonts/Poppins-Black.ttf) format("truetype");
+}
+.header {
+  height: 540px;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: GothamBold;
+}
+
+.ul {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ul a {
+  color: #12233c;
+  transition: all 100ms;
+}
+
+a {
+  height: 25px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c20c0d;
+  border-bottom: 2px solid #c20c0d;
+}
+
+.ul .active {
+  transition: all 100ms;
+  color: #c20c0d;
+  border-bottom: 2px solid #c20c0d;
+}
+
+.valuesContainer {
+  width: 940px;
+  height: 213px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.valuesList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.valuesBox {
+  width: 220px;
+  height: 213px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.valuesImage {
+  width: 91px;
+  height: 91px;
+  margin-bottom: 15px;
+}
+
+.valuesText {
+  width: 192px;
+  height: 66px;
+  text-align: center;
+  font-family: GothamBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.4px;
+  line-height: 119.7%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #12233c;
+}
+
+#lastValueText {
+  margin-top: -10px;
+}
+
+.mainContainer {
+  width: 940px;
+  margin: auto;
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+
+.contentBox {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.titleSection {
+  font-family: Steelfish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.01em;
+  color: #12233c;
+  margin-right: 24px;
+}
+
+.redLine {
+  margin-top: 10px;
+  width: 760px;
+}
+
+.contentSection {
+  font-family: GothamBook;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #202124;
+  margin-bottom: 25px;
+}
+
+.mainPhoto {
+  width: 940px;
+  height: 480px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+.primeroSanLorenzoSiempre {
+  display: inline;
+  font-family: GothamBook;
+  font-weight: bold;
+  color: #c20c0d;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background: #12233c;
+}
+
+.escudoOyPMobile {
+  display: none;
+}
+
+.headerMobile {
+  display: none;
+}
+
+@media (max-width: 1069px) {
+  .valuesContainer {
+    width: 500px;
+    height: 410px;
+    margin-bottom: 70px;
+  }
+  .mainContainer {
+    width: 712px;
+  }
+  .contentBox {
+    width: 100%;
+  }
+  .titleContainer {
+    width: 100%;
+  }
+  .redLine {
+    width: 100%;
+  }
+  .contentSection {
+    width: 100%;
+  }
+  .mainPhoto {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 789px) {
+  .valuesContainer {
+    width: 400px;
+    height: 825px;
+  }
+  .valuesList {
+    justify-content: center;
+  }
+}
+@media (max-width: 659px) {
+  .navBar {
+    display: none;
+  }
+  .mainh1 {
+    display: none;
+  }
+  .headerMobile {
+    display: block;
+    width: 100vw;
+    height: 70px;
+  }
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
+  }
+  .escudoOyPMobile {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
+  }
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+    z-index: 10000;
+  }
+  .menuListMobile {
+    color: white;
+    font-family: GothamBold;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .valuesContainer {
+    width: 100vw;
+  }
+  .valuesBox {
+    justify-content: center;
+  }
+  .mainContainer {
+    width: 90vw;
+  }
+  .mainPhoto {
+    height: 25vh;
+  }
+}/*# sourceMappingURL=nosotros.module.css.map */
