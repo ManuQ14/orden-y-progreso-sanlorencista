@@ -442,11 +442,17 @@ export const Noticia = () => {
               noticia.contentSeis ||
               noticia.subtitleSiete ||
               noticia.contentSiete ||
+              noticia.subImagenUno ||
               noticia.subtitleOcho ||
               noticia.contentOcho ||
               noticia.subtitleNueve ||
               noticia.contentNueve ||
-              noticia.contentDiez ? (
+              noticia.contentDiez ||
+              noticia.contentOnce ||
+              noticia.contentDoce ||
+              noticia.contentTrece ||
+              noticia.contentCatorce ||
+              noticia.contentQuince ? (
                 <>
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleUno}</h4>
                   <p className={styles.contentSubtitle}>{noticia.contentUno}</p>
@@ -474,6 +480,11 @@ export const Noticia = () => {
                   <p className={styles.contentSubtitle}>
                     {noticia.contentSiete}
                   </p>
+                  <img
+                      src={`/images/notas/${params.url}/${noticia.subImagenUno}.jpg`}
+                      alt=""
+                      className={styles.secondaryImage}
+                    />
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleOcho}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentOcho}
@@ -485,6 +496,30 @@ export const Noticia = () => {
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleDiez}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentDiez}
+                  </p>
+                  <h4 className={styles.h4Subtitle}>{noticia.subtitleOnce}</h4>
+                  <p className={styles.contentSubtitle}>
+                    {noticia.contentOnce}
+                  </p>
+                  <h4 className={styles.h4Subtitle}>{noticia.subtitleDoce}</h4>
+                  <p className={styles.contentSubtitle}>
+                    {noticia.contentDoce}
+                  </p>
+                  <h4 className={styles.h4Subtitle}>{noticia.subtitleTrece}</h4>
+                  <p className={styles.contentSubtitle}>
+                    {noticia.contentTrece}
+                  </p>
+                  <h4 className={styles.h4Subtitle}>
+                    {noticia.subtitleCatorce}
+                  </h4>
+                  <p className={styles.contentSubtitle}>
+                    {noticia.contentCatorce}
+                  </p>
+                  <h4 className={styles.h4Subtitle}>
+                    {noticia.subtitleQuince}
+                  </h4>
+                  <p className={styles.contentSubtitle}>
+                    {noticia.contentQuince}
                   </p>
                 </>
               ) : (
