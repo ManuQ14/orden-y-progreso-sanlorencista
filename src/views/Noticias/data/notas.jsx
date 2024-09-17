@@ -31,6 +31,16 @@
 
 export const notas = [
   {
+    id: 54,
+    title: "Expulsión de Alejandro Tamer de OYPSL",
+    url: "comunidado-expulsion-alejandro-tamer-oypsl",    
+    date: "14/09/2024",
+    nameImage: "1",
+    miniatureImage: "54-miniatura-comunidado-expulsion-alejandro-tamer-oypsl",
+    writer: "Orden y Progreso Sanlorencista",
+    content: 'Comunicado de la agrupación Orden y Progreso Sanlorencista sobre la expulsión de Alejandro Tamer',
+  },
+  {
     id: 53,
     title: "Comunicado Orden y Progreso Sanlorencista | 12 de Agosto",
     url: "comunicado-orden-y-progreso-sanlorencista-12-agosto",    
