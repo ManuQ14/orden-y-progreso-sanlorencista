@@ -34,7 +34,7 @@ export const notas = [
     id: 56,
     title: "Reunión de Comisión Directiva 08-10-2024",
     url: "reunion-de-comision-directiva-08-10-2024",
-    date: "09/10/2024",
+    date: "08/10/2024",
     nameImage: "1",
     miniatureImage: "56-miniatura-reunion-comision-directiva-08-10-2024",
     writer: "Orden y Progreso Sanlorencista",
@@ -63,7 +63,7 @@ export const notas = [
     contentDiez: `Todavía no hay documentación ni informe preeliminar como habían prometido, que estaría para el mes de agosto. También corresponde aclarar que tampoco hay o al menos no fue informado el contrato con la empresa encargada de realizarla. Por último se confirmó que el balance lo va a firmar la empresa “Lisicki Litvin” y se calcula que va a ser presentado para los primeros días del mes de diciembre.`,
     subtitleOnce: `Punto 1.11 - Cuota Social`,
     contentOnce: `Orden y Progreso Sanlorencista solicitó a la comisión directiva que los aumentos que continúen haciéndose de ahora en adelante tengan tratamiento y no se lleven a cabo de forma unilateral por la Tesorería.`,
-    contentDoce: `📸 @Rodri_Vizcarra`
+    contentDoce: `📸 @Rodri_Vizcarra`,
   },
   {
     id: 55,
@@ -255,7 +255,6 @@ export const notas = [
     contentDoce: `Puesta en valor y recuperación de las reliquias y mobiliarios del Gasómetro de Av. La Plata.`,
     subtitleTrece: `Naming Salón San Martín:`,
     contentTrece: `Se aprobó la colocación del naming del Salón San Martín de la Ciudad Deportiva mediante sponsoreo, como así también la publicidad en el interior del mismo.`,
-    
   },
   {
     id: 46,
