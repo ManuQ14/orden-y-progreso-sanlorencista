@@ -388,7 +388,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.imagenSiete ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenSiete}.jpg`}
@@ -398,7 +397,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.linl ? (
                 <a
                   href="https://drive.google.com/file/d/1B7PX24GTecqPlbTjKVm02Uf8zRw--3l9/view"
@@ -411,121 +409,175 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {/**Sección especial de noticias con subtitulos */}
-              {noticia.subtitleUno ||
-              noticia.contentUno ||
-              noticia.subtitleDos ||
-              noticia.contentDos ||
-              noticia.subtitleTres ||
-              noticia.contentTres ||
-              noticia.subtitleCuatro ||
-              noticia.contentCuatro ||
-              noticia.subtitleCinco ||
-              noticia.contentCinco ||
-              noticia.subtitleSeis ||
-              noticia.contentSeis ||
-              noticia.subtitleSiete ||
-              noticia.contentSiete ||
-              noticia.subtitleOcho ||
-              noticia.contentOcho ||
-              noticia.subtitleNueve ||
-              noticia.contentNueve ||
-              noticia.contentDiez ||
-              noticia.contentOnce ||
-              noticia.contentDoce ||
-              noticia.contentTrece ||
-              noticia.contentCatorce ||
-              noticia.contentQuince ? (
-                <>
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleUno}</h4>
-                  <p className={styles.contentSubtitle}>{noticia.contentUno}</p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleDos}</h4>
-                  <p className={styles.contentSubtitle}>{noticia.contentDos}</p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleTres}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentTres}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>
-                    {noticia.subtitleCuatro}
-                  </h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentCuatro}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleCinco}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentCinco}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleSeis}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentSeis}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleSiete}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentSiete}
-                  </p>
-                  {noticia.subImagenUno ? (
-                    <img
-                      src={`/images/notas/${params.url}/${noticia.subImagenUno}.jpg`}
-                      alt=""
-                      className={styles.secondaryImage}
-                    />
-                  ) : (
-                    ""
-                  )}
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleOcho}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentOcho}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleNueve}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentNueve}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleDiez}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentDiez}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleOnce}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentOnce}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleDoce}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentDoce}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>{noticia.subtitleTrece}</h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentTrece}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>
-                    {noticia.subtitleCatorce}{" "}
-                  </h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentCatorce}
-                  </p>
-
-                  <h4 className={styles.h4Subtitle}>
-                    {noticia.subtitleQuince}
-                  </h4>
-                  <p className={styles.contentSubtitle}>
-                    {noticia.contentQuince}
-                  </p>
-                </>
+              {noticia.subtitleUno ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleUno}</h4>
               ) : (
                 ""
               )}
+              {noticia.contentUno ? (
+                <p className={styles.contentSubtitle}>{noticia.contentUno}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleDos ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleDos}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentDos ? (
+                <p className={styles.contentSubtitle}>{noticia.contentDos}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleTres ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleTres}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentTres ? (
+                <p className={styles.contentSubtitle}>{noticia.contentTres}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleCuatro ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleCuatro}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentCuatro ? (
+                <p className={styles.contentSubtitle}>
+                  {noticia.contentCuatro}
+                </p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleCinco ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleCinco}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentCinco ? (
+                <p className={styles.contentSubtitle}>{noticia.contentCinco}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleSeis ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleSeis}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentSeis ? (
+                <p className={styles.contentSubtitle}>{noticia.contentSeis}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleSiete ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleSiete}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentSiete ? (
+                <p className={styles.contentSubtitle}>{noticia.contentSiete}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subImagenUno ? (
+                <img
+                  src={`/images/notas/${params.url}/${noticia.subImagenUno}.jpg`}
+                  alt=""
+                  className={styles.secondaryImage}
+                />
+              ) : (
+                ""
+              )}
+              {noticia.subtitleOcho ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleOcho}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentOcho ? (
+                <p className={styles.contentSubtitle}>{noticia.contentOcho}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleNueve ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleNueve}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentNueve ? (
+                <p className={styles.contentSubtitle}>{noticia.contentNueve}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleDiez ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleDiez}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentDiez ? (
+                <p className={styles.contentSubtitle}>{noticia.contentDiez}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleOnce ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleOnce}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentOnce ? (
+                <p className={styles.contentSubtitle}>{noticia.contentOnce}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleDoce ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleDoce}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentDoce ? (
+                <p className={styles.contentSubtitle}>{noticia.contentDoce}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleTrece ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleTrece}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentTrece ? (
+                <p className={styles.contentSubtitle}>{noticia.contentTrece}</p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleCatorce ? (
+                <h4 className={styles.h4Subtitle}>
+                  {noticia.subtitleCatorce}{" "}
+                </h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentCatorce ? (
+                <p className={styles.contentSubtitle}>
+                  {noticia.contentCatorce}
+                </p>
+              ) : (
+                ""
+              )}
+              {noticia.subtitleQuince ? (
+                <h4 className={styles.h4Subtitle}>{noticia.subtitleQuince}</h4>
+              ) : (
+                ""
+              )}
+              {noticia.contentQuince ? (
+                <p className={styles.contentSubtitle}>
+                  {noticia.contentQuince}
+                </p>
+              ) : (
+                ""
+              )}
+              
               {noticia.imagenExtra ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenExtra}.jpg`}
