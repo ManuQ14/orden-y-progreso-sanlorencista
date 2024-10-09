@@ -131,9 +131,16 @@ export const Noticia = () => {
             )}
 
             <div className={styles.newsMainContainer}>
-              <div className={styles.parrafos}>{noticia.parrafoUno}</div>
-              <div className={styles.parrafos}>{noticia.parrafoDos}</div>
-
+              {noticia.parrafoUno ? (
+                <div className={styles.parrafos}>{noticia.parrafoUno}</div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoDos ? (
+                <div className={styles.parrafos}>{noticia.parrafoDos}</div>
+              ) : (
+                ""
+              )}
               {noticia.imagenDos ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenDos}.jpg`}
@@ -143,7 +150,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.videoUno ? (
                 <video
                   src={noticia.videoUno}
@@ -153,25 +159,21 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoTres ? (
                 <div className={styles.parrafos}>{noticia.parrafoTres}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoCuatro ? (
                 <div className={styles.parrafos}>{noticia.parrafoCuatro}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoCinco ? (
                 <div className={styles.parrafos}>{noticia.parrafoCinco}</div>
               ) : (
                 ""
               )}
-
               {/**Imagen alternativa */}
               {noticia.imagenAlternativa1 ? (
                 <>
@@ -184,7 +186,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.imagenTres ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenTres}.jpg`}
@@ -194,25 +195,21 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoSeis ? (
                 <div className={styles.parrafos}>{noticia.parrafoSeis}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoSiete ? (
                 <div className={styles.parrafos}>{noticia.parrafoSiete}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoOcho ? (
                 <div className={styles.parrafos}>{noticia.parrafoOcho}</div>
               ) : (
                 ""
               )}
-
               {noticia.imagenAlternativa2 ? (
                 <>
                   <img
@@ -224,7 +221,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.imagenCuatro ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenCuatro}.jpg`}
@@ -234,25 +230,21 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoNueve ? (
                 <div className={styles.parrafos}>{noticia.parrafoNueve}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoDiez ? (
                 <div className={styles.parrafos}>{noticia.parrafoDiez}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoOnce ? (
                 <div className={styles.parrafos}>{noticia.parrafoOnce}</div>
               ) : (
                 ""
               )}
-
               {noticia.imagenAlternativa3 ? (
                 <>
                   <img
@@ -264,13 +256,11 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoDoce ? (
                 <div className={styles.parrafos}>{noticia.parrafoDoce}</div>
               ) : (
                 ""
               )}
-
               {noticia.imagenCinco ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenCinco}.jpg`}
@@ -280,19 +270,16 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoTrece ? (
                 <div className={styles.parrafos}>{noticia.parrafoTrece}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoCatorce ? (
                 <div className={styles.parrafos}>{noticia.parrafoCatorce}</div>
               ) : (
                 ""
               )}
-
               {noticia.imagenAlternativa4 ? (
                 <>
                   <img
@@ -304,7 +291,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.imagenSeis ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenSeis}.jpg`}
@@ -314,13 +300,11 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoQuince ? (
                 <div className={styles.parrafos}>{noticia.parrafoQuince}</div>
               ) : (
                 ""
               )}
-
               {noticia.parrafoDieciseis ? (
                 <div className={styles.parrafos}>
                   {noticia.parrafoDieciseis}
@@ -328,10 +312,78 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.parrafoDiecisiete ? (
                 <div className={styles.parrafos}>
                   {noticia.parrafoDiecisiete}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.imagenSiete ? (
+                <img
+                  src={`/images/notas/${params.url}/${noticia.imagenSiete}.jpg`}
+                  alt=""
+                  className={styles.secondaryImage}
+                />
+              ) : (
+                ""
+              )}
+              {noticia.imagenAlternativa5 ? (
+                <>
+                  <img
+                    src={`/images/notas/${params.url}/${noticia.imagenAlternativa5}.jpg`}
+                    alt=""
+                    className={styles.secondaryImage}
+                  />
+                </>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoDieciocho ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoDieciocho}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoDiecinueve ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoDiecinueve}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.imagenOcho ? (
+                <img
+                  src={`/images/notas/${params.url}/${noticia.imagenOcho}.jpg`}
+                  alt=""
+                  className={styles.secondaryImage}
+                />
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeinte ? (
+                <div className={styles.parrafos}>{noticia.parrafoVeinte}</div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeintiuno ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeintiuno}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeintidos ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeintidos}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeintitres ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeintitres}
                 </div>
               ) : (
                 ""
@@ -347,82 +399,15 @@ export const Noticia = () => {
                 ""
               )}
 
-              {noticia.imagenAlternativa5 ? (
-                <>
-                  <img
-                    src={`/images/notas/${params.url}/${noticia.imagenAlternativa5}.jpg`}
-                    alt=""
-                    className={styles.secondaryImage}
-                  />
-                </>
-              ) : (
-                ""
-              )}
-
-              {noticia.parrafoDieciocho ? (
-                <div className={styles.parrafos}>
-                  {noticia.parrafoDieciocho}
-                </div>
-              ) : (
-                ""
-              )}
-
-              {noticia.parrafoDiecinueve ? (
-                <div className={styles.parrafos}>
-                  {noticia.parrafoDiecinueve}
-                </div>
-              ) : (
-                ""
-              )}
-
-              {noticia.imagenOcho ? (
-                <img
-                  src={`/images/notas/${params.url}/${noticia.imagenOcho}.jpg`}
-                  alt=""
-                  className={styles.secondaryImage}
-                />
-              ) : (
-                ""
-              )}
-
-              {noticia.parrafoVeinte ? (
-                <div className={styles.parrafos}>{noticia.parrafoVeinte}</div>
-              ) : (
-                ""
-              )}
-
-              {noticia.parrafoVeintiuno ||
-              noticia.parrafoVeintidos ||
-              noticia.parrafoVeintitres ||
-              noticia.link ? (
-                <>
-                  <div className={styles.parrafos}>
-                    {noticia.parrafoVeintiuno}
-                  </div>
-                  {noticia.imagenSiete ? (
-                    <img
-                      src={`/images/notas/${params.url}/${noticia.imagenSiete}.jpg`}
-                      alt=""
-                      className={styles.secondaryImage}
-                    />
-                  ) : (
-                    ""
-                  )}
-                  <div className={styles.parrafos}>
-                    {noticia.parrafoVeintidos}
-                  </div>
-                  <div className={styles.parrafos}>
-                    {noticia.parrafoVeintitres}
-                  </div>
-                  <a
-                    href="https://drive.google.com/file/d/1B7PX24GTecqPlbTjKVm02Uf8zRw--3l9/view"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.externalLinks}
-                  >
-                    Plan de Gobierno
-                  </a>
-                </>
+              {noticia.linl ? (
+                <a
+                  href="https://drive.google.com/file/d/1B7PX24GTecqPlbTjKVm02Uf8zRw--3l9/view"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.externalLinks}
+                >
+                  Plan de Gobierno
+                </a>
               ) : (
                 ""
               )}
@@ -442,7 +427,6 @@ export const Noticia = () => {
               noticia.contentSeis ||
               noticia.subtitleSiete ||
               noticia.contentSiete ||
-              noticia.subImagenUno ||
               noticia.subtitleOcho ||
               noticia.contentOcho ||
               noticia.subtitleNueve ||
@@ -456,65 +440,82 @@ export const Noticia = () => {
                 <>
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleUno}</h4>
                   <p className={styles.contentSubtitle}>{noticia.contentUno}</p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleDos}</h4>
                   <p className={styles.contentSubtitle}>{noticia.contentDos}</p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleTres}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentTres}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>
                     {noticia.subtitleCuatro}
                   </h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentCuatro}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleCinco}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentCinco}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleSeis}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentSeis}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleSiete}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentSiete}
                   </p>
-                  <img
+                  {noticia.subImagenUno ? (
+                    <img
                       src={`/images/notas/${params.url}/${noticia.subImagenUno}.jpg`}
                       alt=""
                       className={styles.secondaryImage}
                     />
+                  ) : (
+                    ""
+                  )}
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleOcho}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentOcho}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleNueve}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentNueve}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleDiez}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentDiez}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleOnce}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentOnce}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleDoce}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentDoce}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>{noticia.subtitleTrece}</h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentTrece}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>
-                    {noticia.subtitleCatorce}
+                    {noticia.subtitleCatorce}{" "}
                   </h4>
                   <p className={styles.contentSubtitle}>
                     {noticia.contentCatorce}
                   </p>
+
                   <h4 className={styles.h4Subtitle}>
                     {noticia.subtitleQuince}
                   </h4>
@@ -525,7 +526,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.imagenExtra ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenExtra}.jpg`}
@@ -535,7 +535,6 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-
               {noticia.textoLink ? (
                 <>
                   <div className={styles.parrafos}>{noticia.textoLink}</div>

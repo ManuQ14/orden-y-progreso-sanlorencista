@@ -31,6 +31,41 @@
 
 export const notas = [
   {
+    id: 56,
+    title: "Reunión de Comisión Directiva 08-10-2024",
+    url: "reunion-de-comision-directiva-08-10-2024",
+    date: "09/10/2024",
+    nameImage: "1",
+    miniatureImage: "56-miniatura-reunion-comision-directiva-08-10-2024",
+    writer: "Orden y Progreso Sanlorencista",
+    content:
+      "El día 08-10-2024 hubo reunión de Comisión Directiva en el Estadio Pedro Bidegain, en la nota están los diversos temas tratados...",
+    subtitleUno: `Punto 1.1 - Informe Fútbol Profesional y Alta de Jugadores`,
+    contentUno: `Se informaron los contratos de Reali, Tripichio, Vombergar, Bruera, Fydriszewski. Bustos, Vega y Muniain. 
+                Orden y Progreso al no poder ver los contratos ni saber las condiciones votó de forma negativa.`,
+    subtitleDos: `Punto 1.2 - Otorgamiento de Poderes`,
+    contentDos: `Se informó el otorgamiento de poderes legales por la renuncia del abogado Espinosa Paz y el equipo legal del club encabezado por el Secretario Uriel Barros.`,
+    subtitleTres: `Punto 1.3 - Dictamen y suspensión de Néstor Ortigoza`,
+    contentTres: `Tomó la palabra Soledad Boufflet y luego hizo el descargo el vocal de la comisión directiva. La Subcomisión de Género elevará al Tribunal de Ética y Disciplina el pedido de suspensión de Ortigoza.`,
+    subtitleCuatro: `Punto 1.4 - Orden del día y conformación de la mesa de trabajo por el reglamento de Peñas`,
+    contentCuatro: `Se informó que hasta el momento no tiene resolución ni se sabe aún si se llevarán a cabo las elecciones para elegir un presidente de las mismas.`,
+    subtitleCinco: `Punto 1.5 - Integración Subcomisiones`,
+    contentCinco: `Se informaron las subcomisiones restantes que no estaban informadas hasta el día de la fecha y su respectiva conformación. `,
+    subtitleSeis: `Punto 1.6 - Informes de Jucios correspondientes al Básquet`,
+    contentSeis: `Los mismos van de US$19.600(Diecinueve mil seiscientos dólares)  hasta US$481.000(Cuatrocientos ochenta y un mil dólares), y suman en total US$1.000.000(Un millón de dólares) pendientes de pago que tiene el club.`,
+    subtitleSiete: `Punto 1.7 - Declaración contra las SAD`,
+    contentSiete: `Los miembros de la CD firmaron un acta que será difundida y comunicada por el club. Quienes no hayan estado presente, lo harán en el transcurso de la semana.`,
+    subtitleOcho: `Punto 1.8 - Indumentaria del Club`,
+    contentOcho: `Aún no se definió que empresa será aunque se informó que hay varias interesadas. Sobre esto, Marcelo Culotta sostuvo que es impresentable la relacion que se hizo de calidad y entrega de la indumentaria de las disciplinas del Atletismo y del Voley que preside.`,
+    subtitleNueve: `Punto 1.9 - Concesionaria Gastronómica`,
+    contentNueve: `Se informó que el nuevo monto de la concesionaria gastronómica paga 72 millones de pesos al año. Aspecto que va en detrimento de lo informado por el oficialista que el 8 de febrero de este año había informado que se iban a pagar 130 millones, o sea, casi el doble.`,
+    subtitleDiez: `Punto 1.10 - Auditoría`,
+    contentDiez: `Todavía no hay documentación ni informe preeliminar como habían prometido, que estaría para el mes de agosto. También corresponde aclarar que tampoco hay o al menos no fue informado el contrato con la empresa encargada de realizarla. Por último se confirmó que el balance lo va a firmar la empresa “Lisicki Litvin” y se calcula que va a ser presentado para los primeros días del mes de diciembre.`,
+    subtitleOnce: `Punto 1.11 - Cuota Social`,
+    contentOnce: `Orden y Progreso Sanlorencista solicitó a la comisión directiva que los aumentos que continúen haciéndose de ahora en adelante tengan tratamiento y no se lleven a cabo de forma unilateral por la Tesorería.`,
+    contentDoce: `📸 @Rodri_Vizcarra`
+  },
+  {
     id: 55,
     title: "Asamblea de Representantes de Socios",
     url: "asamblea-de-representantes-de-socios-30-de-septiembre-2024",
@@ -220,6 +255,7 @@ export const notas = [
     contentDoce: `Puesta en valor y recuperación de las reliquias y mobiliarios del Gasómetro de Av. La Plata.`,
     subtitleTrece: `Naming Salón San Martín:`,
     contentTrece: `Se aprobó la colocación del naming del Salón San Martín de la Ciudad Deportiva mediante sponsoreo, como así también la publicidad en el interior del mismo.`,
+    
   },
   {
     id: 46,
