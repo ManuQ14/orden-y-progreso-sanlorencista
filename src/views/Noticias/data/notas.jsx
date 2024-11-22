@@ -4,7 +4,7 @@
     id: 4,
     title: "Título",
     url: "url-noticia",    
-    date: "dd/10/2024",
+    date: "dd/11/2024",
     nameImage: "imagenPrincipal",
     miniatureImage: "miniaturaNota",
     writer: "escritor",
@@ -30,6 +30,36 @@
 */
 
 export const notas = [
+  {
+    id: 57,
+    title:
+      "Reunión de Comisión Directiva | Palco Brubank - Estadio Pedro Bidegain (20/11/2024)",
+    url: "reunion-comision-directiva-20-11-2024",
+    date: "21/11/2024",
+    nameImage: "1",
+    miniatureImage: "56-miniatura-reunion-de-comision-directiva-21-11-2024",
+    writer: "Orden y Progreso Sanlorencista",
+    content:
+      "Se realizó una reunión de comisión directiva. Entrá en la nota para leer todos los detalles",
+    parrafoUno: `Ausentes: Agustina Nordenstrom, Julio Lopardo, Néstor Navarro, Pablo García Lago y Alejandro Tamer (llegó sobre el final).`,
+    subtitleUno: `Punto 1.1 - Contrato de todo el cuerpo técnico`,
+    contentUno: `Orden y Progreso votó en contra por no haber dispuesto de los mismos en tiempo y forma para poder analizarlos. Una práctica que este gobierno repite de manera sistemática.`,
+    subtitleDos: `1.2 Convocatoria Asamblea Ordinaria y Balance 2023/2024`,
+    contentDos: `Se citó para el día 13 de diciembre a las 19hs en el Polideportivo Roberto Pando. Además, el martes 26 de noviembre se llevará a cabo una reunión con la Comisión Fiscalizadora para ver y analizar el balance. El 29 de noviembre se enviará por mail el balance a todos los asambleístas.`,
+    subtitleTres: `1.3 Tratamiento de presupuesto de la Liga de Fútbol 2025`,
+    contentTres: `Se aprobó por unanimidad y se va a presentar en AFA.`,
+    subtitleCuatro: `1.4 Convenio por la UAI`,
+    contentCuatro: `Se aprobó por unanimidad`,
+    subtitleCinco: `1.5 Subcomisión de Camping`,
+    contentCinco: `El intendente Martín Cigna informó la creación de la Subcomisión de Camping`,
+    subtitleSeis: `1.6 Creación de Secretaría Técnica de Fútbol Femenino`,
+    contentSeis: `Se puso a consideración quiénes la van a componer y cómo estará conformada. Se aprobó por unanimidad.`,
+    subtitleSiete: `1.7/1.8/1.9 Capacitación en perspectiva de género`,
+    contentSiete: `Soledad Boufflet realizó y compartió un informe de lo que será el día 25 de noviembre en el marco de la eliminación de la violencia contra las mujeres. Boufflet compartió el número de personas que ingresan al estadio reportando alguna discapacidad, unas mil de las que sólo poco más de 100 son socias. Se impulsará que lo puedan ser.`,
+    subtitleOcho: `1.10. Campaña de Socios`,
+    contentOcho: `La misma no se llevó a cabo.`,
+    contentDiez: `Nuestro vocal Marcelo Culotta remarcó la necesidad de que las reuniones de Comisión Directiva sean abiertas a los socios como marca el Estatuto en su artículo 59°. Ahí tomó la palabra Daniela Méndez Righi, quien informó a la mesa directiva que para la próxima reunión de Comisión Directiva se abrirá un sitio para que los socios se puedan inscribir ingresando sus datos, aunque aclararon que si un socio ya se anotó a una reunión para la próxima tendrá prioridad uno que no haya participado, por lo que esto dificultará que un mismo socio se haga presente en dos reuniones seguidas.`,
+  },
   {
     id: 56,
     title: "Reunión de Comisión Directiva 08-10-2024",
