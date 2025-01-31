@@ -4,7 +4,7 @@
     id: 4,
     title: "Título",
     url: "url-noticia",    
-    date: "dd/11/2024",
+    date: "dd/02/2025",
     nameImage: "imagenPrincipal",
     miniatureImage: "miniaturaNota",
     writer: "escritor",
@@ -31,13 +31,48 @@
 
 export const notas = [
   {
+    id: 59,
+    title: "Pedido de Destitución Néstor Nelson Navarro",
+    url: "pedido-destitucion-navarro",
+    date: "30/01/2025",
+    nameImage: "1",
+    miniatureImage: "59-miniatura-pedido-desitucion-navarro",
+    writer: "Orden y Progreso Sanlorencista",
+    content:
+      "Como miembros de la 1era minoría y con representación en todos los órganos de gobierno, solicitamos al Tribunal de Ética y Disciplina la inmediata cesantía y destitución del Sr. Néstor Nelson Navarro como Vicepresidente 1ero de la Comisión Directiva del CASLA.",
+    parrafoUno: `A los socios/as de San Lorenzo de Almagro:`,
+    parrafoDos: `Como miembros de la 1era minoría y con representación en todos los órganos de gobierno, solicitamos al Tribunal de Ética y Disciplina la inmediata cesantía y destitución del Sr. Néstor Nelson Navarro como Vicepresidente 1ero de la Comisión Directiva del CASLA.`,
+    parrafoTres: `Esta solicitud se fundamenta en el incumplimiento de sus deberes y obligaciones como miembro de Comisión Directiva, tal como se estipula en el Estatuto Social del Club en los artículos 35, 36, 40, 62 y concordantes, ya que por ello ha incurrido en causal de cesantía.`,
+    parrafoCuatro: `Las reiteradas ausencias (11 sobre 13 reuniones de Comisión Directiva) son inaceptables y perjudican seriamente los intereses de la Institución cuyos cargos deben ser honrados.`,
+  },
+  {
+    id: 58,
+    title:
+      "REUNIÓN DE COMISIÓN DIRECTIVA (Palco Brubank, Estadio Pedro Bidegain - 26/12/2024)",
+    url: "reunion-comision-directiva-26-12-2024",
+    date: "26/12/2024",
+    nameImage: "1",
+    miniatureImage: "58-miniatura-reunion-comision-directiva-26-12-2024",
+    writer: "Orden y Progreso Sanlorencista",
+    content:
+      "Se realizó una reunión de comisión directiva. Entrá en la nota para leer todos los detalles",
+    parrafoUno: `Ausentes: Javier Allievi, Agustina Nordenström y Julio Lopardo.`,
+    parrafoDos: `Dicha reunión fue la 4° de las últimas 6 en realizarse de manera cerrada, por eso nuestro vocal @MarceCulotta exigió que se respete el derecho de los socios de asistir a las reuniones.`,
+    subtitleUno: `1.1 Redistribución de cargos`,
+    contentUno: `Secretario: Martín Cigna. Prosecretario: Uriel Barros. Intendente: Mateo Sagardoy. Subintendente: Pablo Levalle. Protesorera: Carina Farías. Secretaria de actas: Daniela Méndez Righi.`,
+    subtitleDos: `1.2 Situación económico-financiera`,
+    contentDos: `Pese a la crítica situación económico-financiera, deportiva e institucional, el oficialismo no anunció un plan de reestructuración para salir de la crisis. Por el contrario, el presidente Marcelo Moretti confirmó la venta del 50% del pase de Santiago Sosa y Agustín Hausch en 1.500.000 dólares netos, a las que nos manifestamos en contra. Por su parte, el vicepresidente Néstor Navarro aseguró que de continuar las inconsistencias en la gestión para el año 2025, presentaría su renuncia. No se entregó ningún informe de Tesorería.  `,
+    subtitleTres: `1.3 Vuelta a Boedo`,
+    contentTres: `Los trabajos de demolición terminarán entre el 10 y el 15 de enero y luego se diagramarán los pasos a seguir. Orden y Progreso Sanlorencista propuso una reorganización de la mesa de trabajo por La Vuelta a Boedo debido a la renuncia indeclinable de Nazareno Navone a su cargo de Director de Desarrollo. A su vez, Moretti reconoció que NO se pagó la primera cuota del pre-acuerdo firmado con IDOM hace apenas unos meses.`,
+  },
+  {
     id: 57,
     title:
       "Reunión de Comisión Directiva | Palco Brubank - Estadio Pedro Bidegain (20/11/2024)",
     url: "reunion-comision-directiva-20-11-2024",
     date: "21/11/2024",
     nameImage: "1",
-    miniatureImage: "56-miniatura-reunion-de-comision-directiva-21-11-2024",
+    miniatureImage: "57-miniatura-reunion-comision-directiva-26-12-2024",
     writer: "Orden y Progreso Sanlorencista",
     content:
       "Se realizó una reunión de comisión directiva. Entrá en la nota para leer todos los detalles",
