@@ -7,7 +7,7 @@
     date: "dd/02/2025",
     nameImage: "imagenPrincipal",
     miniatureImage: "miniaturaNota",
-    writer: "escritor",
+    writer: "OyP Sanlorencista",
     content: '',
     imagenDos: "imagenSecundaria",
     imagenTres: 'tercerFoto',
@@ -30,6 +30,26 @@
 */
 
 export const notas = [
+  {
+    id: 60,
+    title:
+      "REUNIÓN DE COMISIÓN DIRECTIVA - SAN LORENZO (13/2/2024 - Estadio Pedro Bidegain)",
+    url: "reunion-comision-directiva-14-02-2026",
+    date: "14/02/2025",
+    nameImage: "1",
+    miniatureImage: "60-miniatura-reunion-comision-directiva-14-02-2026",
+    writer: "OyP Sanlorencista",
+    content:
+      "En la jornada de ayer tuvo lugar una nueva reunión de Comisión Directiva en el Palco Oficial del Estadio Pedro Bidegain. La misma volvió a evidenciar el accionar miserable con el que el oficialismo conduce los hilos de nuestro amado San Lorenzo.",
+    parrafoUno: `En la jornada de ayer tuvo lugar una nueva reunión de Comisión Directiva en el Palco Oficial del Estadio Pedro Bidegain. La misma volvió a evidenciar el accionar miserable con el que el oficialismo conduce los hilos de nuestro amado San Lorenzo.`,
+    parrafoDos: `Además de escuchar el contrato de la marca de indumentaria ATOMIK, cuyos documentos no fueron dados a conocer en tiempo y forma, dimos con la realidad de que el club percibirá una suma de 1.500.000 dólares en 4 años (es decir, 375.000 dólares por año). De este monto, la nueva marca adelantó 1 millón el pasado 4 de enero, mientras que los 500 mil restantes se entregarán a mediados de 2026 según la versión del presidente Marcelo Moretti. A su vez, al club le ingresará un 10% de la venta de cada prenda.`,
+    parrafoTres: `Ante la consulta de nuestro vocal Marcelo Culotta, se supo que el subintendente Pablo Levalle se encargará de controlar que la marca cumpla con la cantidad de indumentaria estipulada y con el pago de las regalías.`,
+    parrafoCuatro: `Al mismo tiempo se solicitaron las propuestas del resto de las empresas de indumentaria, con el objetivo de constatar que la oferta de ATOMIK era la de mayores beneficios para San Lorenzo. Sin embargo, no hubo respuesta por parte del oficialismo.`,
+    parrafoCinco: `Por el nuevo sponsor de la camiseta IEB+, el club llegó a un acuerdo de 5 meses (de febrero a junio) y por el que percibirá 200 millones de pesos. Un promedio de 40 millones al mes.`,
+    parrafoSeis: `En cuanto a la concesión de la sede de Av. La Plata, un tema de relevancia para los socios y socias de San Lorenzo, la empresa Evolution Sport hará una inversión de 800.000.000 de pesos para la remodelación del gimnasio, la pileta y los vestuarios. La duración del contrato es de 3 años, con la opción para la empresa de renovar por 2 años más.`,
+    parrafoSiete: `Esto fue votado en contra por nuestro vocal Marcelo Culotta, dado que el club podría afrontar la inversión desde sus propias arcas, en especial teniendo en cuenta los montos irrisorios que se firmaron en contratos de fútbol profesional durante lo que lleva la actual gestión y porque, además, este punto no fue tratado por la Asamblea tal como indican los Artículos 55 (inciso L) y 62 (inciso Q) del Estatuto.`,
+    parrafoOcho: `Por último, vale destacar un suceso lamentable que se dio en la reunión y que deja a las claras el nulo interés de la actual gestión por los deportes federados del club. Los dirigentes oficialistas votaron en contra de la nueva conformación de las subcomisiones de voley y atletismo, disciplinas que se desempeñaron con éxito durante todo 2024 bajo la conducción de Orden y Progreso Sanlorencista, con una importante recaudación de dinero a través de sponsors que mes a mes ingresa en las arcas del club. El motivo de la negativa fue "porque no", evidenciando el desprecio que tienen por aquellos que quieren colaborar con San Lorenzo.`,
+  },
   {
     id: 59,
     title: "Pedido de Destitución Néstor Nelson Navarro",
