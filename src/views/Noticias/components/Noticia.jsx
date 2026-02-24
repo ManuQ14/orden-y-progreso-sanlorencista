@@ -388,6 +388,27 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
+              {noticia.parrafoVeinticuatro ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeinticuatro}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeinticinco ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeinticinco}
+                </div>
+              ) : (
+                ""
+              )}
+              {noticia.parrafoVeintiseis ? (
+                <div className={styles.parrafos}>
+                  {noticia.parrafoVeintiseis}
+                </div>
+              ) : (
+                ""
+              )}
               {noticia.imagenSiete ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenSiete}.jpg`}
@@ -577,7 +598,7 @@ export const Noticia = () => {
               ) : (
                 ""
               )}
-              
+
               {noticia.imagenExtra ? (
                 <img
                   src={`/images/notas/${params.url}/${noticia.imagenExtra}.jpg`}
