@@ -1,6 +1,6 @@
 //Imports de React
 
-import { Routes, Route, Navigate, Link, HashRouter } from "react-router-dom";
+import { Routes, Route, Navigate, Link, BrowserRouter } from "react-router-dom";
 
 //import assets para el footer
 /* import EscudoFooter from "../assets/EscudoOyP.svg"; */
@@ -35,7 +35,7 @@ import { Plataforma } from "../views/Plataforma/Plataforma";
 
 export const Routing = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<Home />} />
@@ -65,7 +65,7 @@ export const Routing = () => {
           <img src={EscudoFooter} alt="Escudo" id="EscudoFooter" />
         </div>
         <ul className="listaFooter">
-          <Link to="/inicio">Inicio</Link>         
+          <Link to="/inicio">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
           <Link to="/noticias">Noticias</Link>
           <Link to="/plan-de-gobierno">Plan de Gobierno</Link>
@@ -207,6 +207,6 @@ export const Routing = () => {
           </div>
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };

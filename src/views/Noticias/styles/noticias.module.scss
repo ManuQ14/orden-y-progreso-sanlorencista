@@ -132,12 +132,10 @@ a:hover {
   height: 200px;
   position: absolute;
   border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(18, 35, 60, 0) 0%,
-    rgba(18, 35, 60, 0.63) 42.5%,
-    #12233c 87.29%
-  );
+  background: linear-gradient(180deg,
+      rgba(18, 35, 60, 0) 0%,
+      rgba(18, 35, 60, 0.63) 42.5%,
+      #12233c 87.29%);
   transition: all 300ms;
 }
 
@@ -251,6 +249,9 @@ a:hover {
 
 .newsMainContainer {
   width: 940px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
   font-family: $gothamBook;
   font-style: normal;
   font-weight: 400;
@@ -268,6 +269,7 @@ a:hover {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .secondaryImage {
   display: flex;
   margin: auto;
@@ -277,6 +279,9 @@ a:hover {
 
 .notaContainer {
   width: 940px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
   margin: auto;
   display: flex;
   flex-flow: column;
@@ -294,39 +299,39 @@ a:hover {
 
 
 //Estilos de links extraordinarios
-.externalLinks{
+.externalLinks {
   font-weight: bold;
-text-decoration: none;
-font-size: 18px;
-display: flex;
-flex-flow: column;
-text-decoration: none;
-align-items: center;
-transition: all 300ms;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  align-items: center;
+  transition: all 300ms;
 }
 
-.externalLinks:hover{
+.externalLinks:hover {
   text-decoration: none;
   border: none;
   transform: scale(105%);
   color: $rojo;
 }
 
-.externalLinks:visited{
+.externalLinks:visited {
   color: $azul;
 }
 
 
 
 //Subitulos parrafo bold
-.h4Subtitle{
+.h4Subtitle {
   font-weight: bold;
   font-size: 16px;
   color: $azul;
   margin-bottom: 10px;
 }
 
-.contentSubtitle{
+.contentSubtitle {
   margin-bottom: 25px;
 }
 
@@ -398,21 +403,23 @@ transition: all 300ms;
     -moz-transform: scale(100%);
     -ms-transform: scale(100%);
     -o-transform: scale(100%);
-}
+  }
+
   50% {
     transform: scale(115%);
     -webkit-transform: scale(115%);
     -moz-transform: scale(115%);
     -ms-transform: scale(115%);
     -o-transform: scale(115%);
-}
+  }
+
   100% {
     transform: scale(100%);
     -webkit-transform: scale(100%);
     -moz-transform: scale(100%);
     -ms-transform: scale(100%);
     -o-transform: scale(100%);
-}
+  }
 }
 
 .shareText {
@@ -434,6 +441,7 @@ transition: all 300ms;
   height: 80px;
   margin: auto;
 }
+
 .ldsRing div {
   box-sizing: border-box;
   display: block;
@@ -447,15 +455,19 @@ transition: all 300ms;
   border-color: $azul transparent transparent transparent;
   -webkit-animation: ldsRing 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
+
 .ldsRing div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .ldsRing div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .ldsRing div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes ldsRing {
   0% {
     transform: rotate(0deg);
@@ -463,14 +475,15 @@ transition: all 300ms;
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-}
+  }
+
   100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-}
+  }
 }
 
 .escudoOyPMobile {
@@ -590,7 +603,7 @@ transition: all 300ms;
     -moz-transform: none;
     -ms-transform: none;
     -o-transform: none;
-}
+  }
 
   .coverDifuminated {
     width: 90vw;
@@ -618,6 +631,7 @@ transition: all 300ms;
     margin-top: 30px;
   }
 
+
   .bodyNewsContainer {
     width: 90vw;
   }
@@ -636,5 +650,93 @@ transition: all 300ms;
 
   .newsMainContainer {
     width: 90vw;
+  }
+}
+
+// Estilos para el HTML generado por el editor Quill (notas del CMS)
+.newsMainContainer {
+  :global(p) {
+    margin-bottom: 1.1em;
+    line-height: 1.7;
+  }
+
+  :global(h2) {
+    margin-top: 1.3em;
+    margin-bottom: 0.4em;
+    font-family: GothamBold, sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+    line-height: 1.3;
+    color: #12233c;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  :global(h3) {
+    margin-top: 1.1em;
+    margin-bottom: 0.3em;
+    font-family: GothamBold, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.3;
+    color: #12233c;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  :global(h4) {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-family: GothamBold, sans-serif;
+    font-weight: 700;
+    font-size: 1.15em;
+    line-height: 1.3;
+    color: #12233c;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  :global(strong) {
+    font-weight: 700;
+  }
+
+  :global(em) {
+    font-style: italic;
+  }
+
+  :global(blockquote) {
+    border-left: 4px solid #c8102e;
+    margin: 1.2em 0;
+    padding: 0.4em 1em;
+    font-style: italic;
+    color: #444;
+    background: #fafafa;
+  }
+
+  :global(ul),
+  :global(ol) {
+    margin: 0.6em 0 1em 1.8em;
+    line-height: 1.7;
+  }
+
+  :global(li) {
+    margin-bottom: 0.3em;
+  }
+
+  :global(a) {
+    color: #0057a8;
+    text-decoration: underline;
+    height: auto;
+  }
+
+  :global(a:hover) {
+    color: #c8102e;
+    border-bottom: none;
+  }
+
+  :global(img) {
+    max-width: 100%;
+    margin: 1em 0;
+    border-radius: 4px;
   }
 }
