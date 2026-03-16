@@ -29,7 +29,7 @@
   },
 */
 
-export const notas = [
+const allNotas = [
   {
     id: 66,
     title: "REUNIÓN DE COMISIÓN DIRECTIVA – SAN LORENZO (10/03/2026 – SEDE AV. LA PLATA)",
@@ -1585,3 +1585,8 @@ export const notas = [
     creemos indispensable el regreso total y con Estadio a Av. La Plata.`,
   },
 ];
+
+// Se filtran y remueven todas las notas que mencionan a "tamer" de los datos estáticos
+export const notas = allNotas.filter(nota => {
+  return !JSON.stringify(nota).toLowerCase().includes("tamer");
+});

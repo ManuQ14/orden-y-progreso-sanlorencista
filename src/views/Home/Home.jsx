@@ -6,6 +6,7 @@ import escudoOyP from "../../assets/EscudoOyP.svg";
 import styles from "./styles/home.module.scss";
 
 import { Header } from "./components/Header";
+import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { MainSection } from "./components/MainSection";
 
 //import escudoImage from "../../assets/images/IMAGENNOTICIAS.jpg";
@@ -54,7 +55,7 @@ export const Home = () => {
           <meta property="og:image" content="https://oypsanlorencista.com/images/notas/comunicado-orden-y-progreso-sanlorencista/1.jpg" />
           <meta property="og:image:url" content="https://oypsanlorencista.com/images/notas/comunicado-orden-y-progreso-sanlorencista/1.jpg" />
           <meta property="og:image:secure_url" content="https://oypsanlorencista.com/images/notas/comunicado-orden-y-progreso-sanlorencista/1.jpg" />
-          <meta name="keywords" content="Orden, Progreso, Sanlorencista, San Lorenzo, San, Lorenzo, Política, Ciclón, Cuervo, Vuelta a Boedo, Boedo, Marcelo Culotta, Culotta, Presidente, Tamer, Culotta Presidente, 17 de diciembre, Elecciones San Lorenzo" />
+          <meta name="keywords" content="Orden, Progreso, Sanlorencista, San Lorenzo, San, Lorenzo, Política, Ciclón, Cuervo, Vuelta a Boedo, Boedo, Marcelo Culotta, Culotta, Presidente, Culotta Presidente, 17 de diciembre, Elecciones San Lorenzo" />
     
 
           {/*Twitter Cards */}
@@ -68,6 +69,7 @@ export const Home = () => {
 
         </Helmet>
         <Header />
+        <HeroBanner />
         <MainSection />
       </>
     );
