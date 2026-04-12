@@ -321,7 +321,7 @@ header {
   color: #444;
 }
 
-// Responsive timeline - Tablet & Mobile
+// Responsive timeline - Tablet
 @media screen and (max-width: 1069px) {
   .centralLine, .dot {
     display: none !important;
@@ -339,8 +339,10 @@ header {
   }
 
   .sectionTitle {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
     padding-left: 0;
-    text-align: center;
     margin-bottom: 30px;
     font-size: 40px;
   }
@@ -359,15 +361,45 @@ header {
     align-items: center;
     text-align: center;
   }
+}
 
+// Mobile Header
+@media screen and (max-width: 659px) {
   .headerMobile {
-    display: block; // Show mobile header logic
+    display: block;
+    width: 100vw;
+    height: 70px;
+  }
+
+  .topMenuContainer {
+    width: 100%;
+    height: 100px;
   }
 
   .escudoOyPMobile {
-    width: 90px; // Fix giant shield
-    height: auto;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: auto;
     cursor: pointer;
+  }
+
+  .menuMobile {
+    width: 100px;
+    display: flex;
+    flex-flow: column;
+    height: 408px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .menuListMobile {
+    color: white;
+    font-family: $gothamBold;
+    margin-top: 50px;
+    text-align: center;
   }
 
   header {

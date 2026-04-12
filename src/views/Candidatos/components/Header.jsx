@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import styles from "../styles/candidatos.module.scss";
 // Using the same escudos and icons as other headers
 import EscudoOyP from "../../../assets/EscudoOyP.svg";
-import menuHamburguesaBlanco from "../../../assets/icons/mobile/menuHamburguesaBlanco.svg";
+import menuHamburguesaNegro from "../../../assets/icons/mobile/menuHamburguesaNegro.svg";
 import cerrarMenuHamburguesaBlanco from "../../../assets/icons/mobile/cerrarMenuBlanco.svg";
 
 export const Header = () => {
@@ -37,33 +37,29 @@ export const Header = () => {
 
       {/*Header mobile */}
       <div className={styles.headerMobile}>
-        <div className={styles.coverDifuminadoMobile}>
-          <img src={EscudoOyP} alt="Escudo OyP mobile" className={styles.escudoOyPMobile} onClick={handleButtonGoToHome} />
-          
-          <button className="menuHamburguesa" onClick={handleButtonOpenMenu}>
-            <img src={menuHamburguesaBlanco} alt="Menú hamburguesa" className={openMenu ? "hiddenMenu" : "burguerMenuButton"} />
-          </button>
+        <img src={EscudoOyP} alt="Escudo OyP mobile" className={styles.escudoOyPMobile} onClick={handleButtonGoToHome} />
+        
+        <button className="menuHamburguesa" onClick={handleButtonOpenMenu}>
+          <img src={menuHamburguesaNegro} alt="Menú hamburguesa" className={openMenu ? "hiddenMenu" : "burguerMenuButton"} />
+        </button>
 
-          <nav className={openMenu ? "navMobile" : "navMobileClosed"}>
-            <div className={styles.topMenuContainer}>
-              <img src={EscudoOyP} alt="Escudo OyP mobile" className={styles.escudoOyPMobile} />
-              <button className="cerrarMenuHamburguesa" onClick={handleButtonCloseMenu}>
-                <img src={cerrarMenuHamburguesaBlanco} alt="Cerrar menú" className={openMenu ? "cerrarMenuHamburguesa" : "hiddenCloseButton"} />
-              </button>
-            </div>
+        <nav className={openMenu ? "navMobile" : "navMobileClosed"}>
+          <div className={styles.topMenuContainer}>
+            <img src={EscudoOyP} alt="Escudo OyP mobile" className={styles.escudoOyPMobile} />
+            <button className="cerrarMenuHamburguesa" onClick={handleButtonCloseMenu}>
+              <img src={cerrarMenuHamburguesaBlanco} alt="Cerrar menú" className={openMenu ? "cerrarMenuHamburguesa" : "hiddenCloseButton"} />
+            </button>
+          </div>
 
-            <ul className={styles.menuMobile}>
-              <NavLink to="/inicio" className={styles.menuListMobile}>Inicio</NavLink>
-              <NavLink to="/nosotros" className={styles.menuListMobile}>Nosotros</NavLink>
-              <NavLink to="/noticias" className={styles.menuListMobile}>Noticias</NavLink>
-              <NavLink to="/candidatos" className={styles.menuListMobile}>Candidatos</NavLink>
-              <NavLink to="/propuestas" className={styles.menuListMobile}>Propuestas</NavLink>
-              <NavLink to="/contacto" className={styles.menuListMobile}>Contacto</NavLink>
-            </ul>
-          </nav>
-
-          <h2 className={"mainTitle"}>Nuestros Candidatos</h2>
-        </div>
+          <ul className={styles.menuMobile}>
+            <NavLink to="/inicio" className={styles.menuListMobile}>Inicio</NavLink>
+            <NavLink to="/nosotros" className={styles.menuListMobile}>Nosotros</NavLink>
+            <NavLink to="/noticias" className={styles.menuListMobile}>Noticias</NavLink>
+            <NavLink to="/candidatos" className={styles.menuListMobile}>Candidatos</NavLink>
+            <NavLink to="/propuestas" className={styles.menuListMobile}>Propuestas</NavLink>
+            <NavLink to="/contacto" className={styles.menuListMobile}>Contacto</NavLink>
+          </ul>
+        </nav>
       </div>
     </>
   );
