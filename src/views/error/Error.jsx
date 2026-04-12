@@ -55,10 +55,10 @@ export const Error = () => {
           <img src={EscudoOyP} alt="Escudo OyP" id="EscudoOyP" />
 
           <NavLink
-            to="/la-vuelta"
+            to="/candidatos"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            La Vuelta
+            Candidatos
           </NavLink>
           <NavLink
             to="/propuestas"
@@ -131,8 +131,8 @@ export const Error = () => {
             <NavLink to="/noticias" className={styles.menuListMobile}>
               Noticias
             </NavLink>
-            <NavLink to="/la-vuelta" className={styles.menuListMobile}>
-              La Vuelta
+            <NavLink to="/candidatos" className={styles.menuListMobile}>
+              Candidatos
             </NavLink>
             <NavLink to="/propuestas" className={styles.menuListMobile}>
               Propuestas

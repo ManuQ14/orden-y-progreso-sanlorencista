@@ -73,10 +73,10 @@ export const Header = () => {
             La Vuelta
           </NavLink> */}
           <NavLink
-              to="/plan-de-gobierno"
+              to="/candidatos"
               className={({ isActive }) => (isActive ? styles.active : "")}
             >
-              Plan de Gobierno
+              Candidatos
             </NavLink>
             <NavLink
               to="/propuestas"
@@ -168,8 +168,8 @@ export const Header = () => {
            {/*  <NavLink to="/la-vuelta" className={styles.menuListMobile}>
               La Vuelta
             </NavLink> */}
-            <NavLink to="/plan-de-gobierno" className={styles.menuListMobile}>
-              Plan de Gobierno
+            <NavLink to="/candidatos" className={styles.menuListMobile}>
+              Candidatos
             </NavLink>
             <NavLink to="/propuestas" className={styles.menuListMobile}>
               Propuestas

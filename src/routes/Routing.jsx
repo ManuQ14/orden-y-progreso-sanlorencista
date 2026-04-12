@@ -31,7 +31,7 @@ import { Propuesta } from "../views/Propuestas/components/Propuesta";
 import { Contacto } from "../views/Contacto/Contacto";
 
 import { Error } from "../views/error/Error";
-import { Plataforma } from "../views/Plataforma/Plataforma";
+import { Candidatos } from "../views/Candidatos/Candidatos";
 
 export const Routing = () => {
   return (
@@ -52,8 +52,8 @@ export const Routing = () => {
         <Route path="/propuestas" element={<Propuestas />} />
         <Route path="/propuestas/:url" element={<Propuesta />} />
 
-        {/* url a plan de gobierno */}
-        <Route path="/plan-de-gobierno" element={<Plataforma />} />
+        {/* url a candidatos */}
+        <Route path="/candidatos" element={<Candidatos />} />
 
         <Route path="/contacto" element={<Contacto />} />
 
@@ -68,7 +68,7 @@ export const Routing = () => {
           <Link to="/inicio">Inicio</Link>
           <Link to="/nosotros">Nosotros</Link>
           <Link to="/noticias">Noticias</Link>
-          <Link to="/plan-de-gobierno">Plan de Gobierno</Link>
+          <Link to="/candidatos">Candidatos</Link>
           <Link to="/propuestas">Propuestas</Link>
           <Link to="/contacto">Contacto</Link>
         </ul>
@@ -143,7 +143,7 @@ export const Routing = () => {
           </div>
           <div className="subListContainer">
             {/* <Link to="/la-vuelta">La Vuelta</Link> */}
-            <Link to="/plan-de-gobierno" >Plan de Gobierno</Link>
+            <Link to="/candidatos" >Candidatos</Link>
             <Link to="/propuestas">Propuestas</Link>
             <Link to="/contacto">Contacto</Link>
           </div>
