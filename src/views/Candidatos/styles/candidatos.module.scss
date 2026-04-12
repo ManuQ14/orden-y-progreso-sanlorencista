@@ -125,10 +125,11 @@ header {
 }
 
 .timelineItem {
+  box-sizing: border-box;
   padding: 20px 40px;
   position: relative;
   background-color: inherit;
-  width: 45%;
+  width: 50%; // Match perfectly to half the container to align dots mathematically
   opacity: 0; // Starts hidden
   transform: translateY(50px);
   transition: all 0.8s ease-out;
@@ -151,17 +152,20 @@ header {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: -17px;
-  background-color: white;
-  border: 5px solid $azul;
+  background-color: $azul; // Solo azul macizo
   top: 50%;
-  transform: translateY(-50%);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
+}
+
+.left .dot {
+  right: 0;
+  transform: translate(50%, -50%); // Centra matemáticamente sobre el borde derecho
 }
 
 .right .dot {
-  left: -17px;
+  left: 0;
+  transform: translate(-50%, -50%); // Centra matemáticamente sobre el borde izquierdo
 }
 
 .card {

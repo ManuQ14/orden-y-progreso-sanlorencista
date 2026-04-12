@@ -7,7 +7,6 @@ const candidatesData = [
     id: 1,
     name: "Marcelo Culotta",
     role: "Presidente",
-    description: "Socio refundador, dedicado toda la vida a San Lorenzo y uno de los principales impulsores de la Vuelta a Boedo.",
     fullDescription: "Amplia experiencia en medios y publicidad en el sector privado. Referente de la Vuelta a Boedo, participó en la SCH desde 2006 hasta su salida en 2016, ya como Jefe de Prensa. Tuvo un rol activo en la recuperación de la plaza Lorenzo Massa, la Ley de Restitución Histórica y Rezonificación, además de la Oficina de Atención al Socio y el Polideportivo Pando. Fundador de OyP y candidato en 2023, en 2025 renunció para generar la acefalía y, como vocal opositor de primera minoría, promovió acciones judiciales que forzaron la convocatoria a CD y el fin del mandato de Moretti.",
     photo: "https://oypsanlorencista.com/images/notas/comunicado-orden-y-progreso-sanlorencista/1.jpg" // Placeholder or actual image
   },
@@ -15,134 +14,133 @@ const candidatesData = [
     id: 2,
     name: "Juan Manuel Campos",
     role: "Vicepresidente 1°",
-    description: "Empresario exitoso, fundador de Despegar. Aporta su vasta experiencia en gestión y administración de grandes organizaciones.",
-    fullDescription: "Con experiencia empresarial en el rubro de la construcción y el acero, Juan Manuel es Licenciado en X y miembro fundador de Todo x San Lorenzo, agrupación creada en 2024 y fuertemente posicionada en contra del gobierno de Marcelo Moretti.",
+    fullDescription: "Con experiencia empresarial en el rubro de la construcción y el acero, Juan Manuel es Licenciado en X y miembro fundador de Todo x San Lorenzo, una agrupación joven creada en 2024.",
     photo: "https://oypsanlorencista.com/images/notas/comunicado-orden-y-progreso-sanlorencista/1.jpg" // Placeholder
   },
   {
     id: 3,
     name: "Juan Bautista Castagna",
-    role: "Secretario",
-    description: "Miembro fundamental del equipo con amplia trayectoria en relaciones institucionales.",
+    role: "Vocal Titular N°1",
+    fullDescription: "Abogado con experiencia en el sector privado y miembro fundador de Orden y Progreso. Apoderado Legal de la agrupación desde 2022.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 4,
     name: "Aríel Dean",
-    role: "Vocal N° 3",
-    description: "Especialista en temas administrativos y legales del club.",
+    role: "Vocal Titular N°2",
+    fullDescription: "Licenciado en Ciencias Políticas. Miembro de la Comisión Fiscalizadora del club y fundador de la agrupación Actitud San Lorenzo.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 5,
-    name: "Candidato Cinco",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Ana Bozzano",
+    role: "Vocal Titular N°3",
+    fullDescription: "Docente",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 6,
-    name: "Candidato Seis",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Hernán Etman",
+    role: "Vocal Titular N°4",
+    fullDescription: "Abogado y ex vicepresidente del CASLA. Fue parte de la reestructuración del club tras la acefalía de 2012, finalizando su mandato en 2013.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 7,
-    name: "Candidato Siete",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Gonzalo Campos",
+    role: "Vocal Titular N°5",
+    fullDescription: "Profesional con más de 20 años en Fintech. Lic. en Administración (UBA), Maestría en Finanzas (CEMA) y Fintech (ITBA).",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 8,
-    name: "Candidato Ocho",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Pedro Criscolo",
+    role: "Vocal Titular N°6",
+    fullDescription: "Fundador de la agrupación Lorenzo Vive e impulsor del tratamiento de la expulsión de Marcelo Moretti a través del Tribunal de Ética.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 9,
-    name: "Candidato Nueve",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Oscar Alejandro Moreira",
+    role: "Vocal Titular N°7",
+    fullDescription: "",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 10,
-    name: "Candidato Diez",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Claudia Da Costa Díaz",
+    role: "Vocal Titular N°8",
+    fullDescription: "Escritora y directora de medios audiovisuales.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 11,
-    name: "Candidato Once",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Daniel Rotella",
+    role: "Vocal Titular N°9",
+    fullDescription: "Contador.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 12,
-    name: "Candidato Doce",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Maximiliano Ferreira",
+    role: "Vocal Titular N°10",
+    fullDescription: "Abogado, cofundador del estudio T&F. Miembro de Todo x San Lorenzo.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 13,
-    name: "Candidato Trece",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Silvana Maidana",
+    role: "Vocal Titular N°11",
+    fullDescription: "",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 14,
-    name: "Candidato Catorce",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Lucas Rajoy",
+    role: "Vocal Titular N°12",
+    fullDescription: "",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 15,
-    name: "Candidato Quince",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Guillermo Mangone",
+    role: "Vocal Titular N°13",
+    fullDescription: "Secretario General de la Federación de Trabajadores de la Industria del Gas Natural de la República Argentina (FETIGNRA).",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 16,
-    name: "Candidato Dieciseis",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Tomás González Cordásco",
+    role: "Vocal Titular N°14",
+    fullDescription: "Parte de la Dirección de Seguridad del Senado de la Nación. Miembro de Actitud San Lorenzo.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 17,
-    name: "Candidato Trece",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Diego Espinosa Godoy",
+    role: "Vocal Titular N°15",
+    fullDescription: "Abogado y docente universitario, impulsó judicialmente, junto con Marcelo Culotta, la convocatoria a reunión de CD para declarar la acefalía.",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 18,
-    name: "Candidato Trece",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Mariano Achile",
+    role: "Vocal Titular N°16",
+    fullDescription: "",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 19,
-    name: "Candidato Trece",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Mariana Vilaseco",
+    role: "Vocal Titular N°17",
+    fullDescription: "",
     photo: "https://via.placeholder.com/150"
   },
   {
     id: 20,
-    name: "Candidato Trece",
-    role: "Secretario",
-    description: "Especialista en temas administrativos y legales del club.",
+    name: "Gustavo Fernández Quiroz",
+    role: "Vocal Titular N°18",
+    fullDescription: "Contador",
     photo: "https://via.placeholder.com/150"
   }
 ];
