@@ -15,6 +15,15 @@ export const MainSection = () => {
   const confirmMobile = (e) => {
     e.preventDefault();
 
+    // Sanitización de inputs: previene inyección de código (XSS/SQLi básicos)
+    // eliminando los caracteres < y > antes de enviar la información.
+    const elements = form.current.elements;
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].tagName === "INPUT" || elements[i].tagName === "TEXTAREA") {
+         elements[i].value = elements[i].value.replace(/[<>'"`;]/g, "");
+      }
+    }
+
     emailjs
       .sendForm(
         "service_7o59f95",

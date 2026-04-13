@@ -198,9 +198,15 @@ export const Main = () => {
           >
             <div className={styles.dot}></div>
 
-            <div className={styles.card} onClick={() => openModal(candidate)}>
+            <div className={styles.card} /* onClick={() => openModal(candidate)} */>
               <div className={styles.cardImageContainer}>
-                <img src={candidate.photo} alt={candidate.name} className={styles.cardImage} />
+                <img 
+                  src={candidate.photo} 
+                  alt={candidate.name} 
+                  className={styles.cardImage} 
+                  onContextMenu={(e) => e.preventDefault()}
+                  draggable="false"
+                />
               </div>
               <div className={styles.cardContent}>
                 <h3 className={styles.cardName}>{candidate.name}</h3>
@@ -218,7 +224,13 @@ export const Main = () => {
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <button className={styles.closeButton} onClick={closeModal}>&times;</button>
             <div className={styles.modalBody}>
-              <img src={selectedCandidate.photo} alt={selectedCandidate.name} className={styles.modalImage} />
+              <img 
+                src={selectedCandidate.photo} 
+                alt={selectedCandidate.name} 
+                className={styles.modalImage} 
+                onContextMenu={(e) => e.preventDefault()}
+                draggable="false"
+              />
               <div className={styles.modalInfo}>
                 <h3 className={styles.modalName}>{selectedCandidate.name}</h3>
                 <h4 className={styles.modalRole}>{selectedCandidate.role}</h4>
