@@ -1,0 +1,159 @@
+@import "../../styles/variables";
+
+.footer {
+  height: 200px;
+  background-color: #12233c;
+  background-image: url(../../assets/images/footerOyP2023.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 659px) {
+    display: none;
+  }
+}
+
+.contenedorEscudo {
+  width: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.escudoFooter {
+  width: 90px;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.listaFooter {
+  padding: 0;
+  width: 625px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      color: #c20c0d;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.contenedorRedes {
+  display: flex;
+  align-items: center;
+}
+
+.separatedLine {
+  width: 2px;
+  height: 77px;
+  margin-right: 15px;
+}
+
+.contenedorTitleAndIconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleSeguinos {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contenedorIconosRedes {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+
+  img {
+    height: 18px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+/* Mobile Footer */
+.footerMobile {
+  display: none;
+
+  @media (max-width: 659px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../../assets/footerMobile.svg);
+    background-size: cover;
+    padding: 20px 0;
+  }
+}
+
+.listaFooterMobile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+
+  .subListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
+
+.secondContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.escudoFooterMobile {
+  width: 80px;
+}
+
+.contenedorTitleAndIconosMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .titleSeguinosMobile {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .contenedorIconosRedesMobile {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    img {
+      height: 18px;
+    }
+  }
+}

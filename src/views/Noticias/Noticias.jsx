@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Header } from "./components/Header";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { MiniaturaNoticias } from "./components/MiniaturaNoticias";
 import escudoOyP from "../../assets/EscudoOyP.svg";
 import styles from "./styles/noticias.module.scss";
@@ -58,7 +58,7 @@ export const Noticias = () => {
           <title>Noticias - Orden y Progreso Sanlorencista</title>
           {/*Fin meta tags */}
         </Helmet>
-        <Header />
+        <PageHeader showHero={false} />
         <div className={styles.noticiasContainer}>
           <h2 className={styles.subtitle}>Noticias</h2>
           <MiniaturaNoticias />

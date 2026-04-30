@@ -1,8 +1,6 @@
-//import React from "react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Header } from "./components/Header";
-
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { MainSection } from "./components/MainSection";
 
 export const Nosotros = () => {
@@ -36,7 +34,7 @@ export const Nosotros = () => {
   
           {/*Fin meta tags */}
       </Helmet>
-      <Header />
+      <PageHeader showHero={false} />
       <MainSection />
     </>
   );

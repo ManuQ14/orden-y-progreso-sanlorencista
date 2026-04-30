@@ -8,8 +8,8 @@ $color-texto-blanco: #ffffff;
 //Fonts
 @font-face {
   font-family: GothamBook;
-  /* src: url(../styles/fonts/GOTHAMBOOK.TTF) format('truetype'); */
-  src: url(./fonts/GothamBook.TTF) format("truetype");
+  /* src: url(/src/styles/fonts/GOTHAMBOOK.TTF) format('truetype'); */
+  src: url("/src/styles/fonts/GothamBook.TTF") format("truetype");
 
   font-style: normal;
   font-weight: normal;
@@ -17,7 +17,7 @@ $color-texto-blanco: #ffffff;
 
 @font-face {
   font-family: GothamBold;
-  src: url(./fonts/GothamBold.TTF) format("truetype");
+  src: url("/src/styles/fonts/GothamBold.TTF") format("truetype");
 
   font-style: normal;
   font-weight: normal;
@@ -25,7 +25,7 @@ $color-texto-blanco: #ffffff;
 
 @font-face {
   font-family: Steelfish;
-  src: url(../styles/fonts/steelfishbd.ttf) format("truetype");
+  src: url("/src/styles/fonts/steelfishbd.ttf") format("truetype");
 
   font-style: normal;
   font-weight: normal;
@@ -33,7 +33,7 @@ $color-texto-blanco: #ffffff;
 
 @font-face {
   font-family: Poppins;
-  src: url(../styles/fonts/Poppins-Black.ttf) format("truetype");
+  src: url("/src/styles/fonts/Poppins-Black.ttf") format("truetype");
 }
 
 $gothamBook: GothamBook;

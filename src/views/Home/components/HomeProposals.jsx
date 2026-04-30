@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { propuestas } from "../../Propuestas/data/propuestas";

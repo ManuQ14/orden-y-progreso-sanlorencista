@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import styles from "./styles/candidatos.module.scss";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 
 export const Candidatos = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ export const Candidatos = () => {
 
   return (
     <div className={styles.containerCandidatos}>
-      <Header />
+      <PageHeader title="Nuestros Candidatos" heroClass={styles.headerHero} />
       <Main />
     </div>
   );

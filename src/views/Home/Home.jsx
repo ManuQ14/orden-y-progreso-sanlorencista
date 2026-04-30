@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import escudoOyP from "../../assets/EscudoOyP.svg";
 import styles from "./styles/home.module.scss";
 
-import { Header } from "./components/Header";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { MainSection } from "./components/MainSection";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 
 //import escudoImage from "../../assets/images/IMAGENNOTICIAS.jpg";
 
@@ -68,7 +68,7 @@ export const Home = () => {
           {/*Fin meta tags */}
 
         </Helmet>
-        <Header />
+        <PageHeader title="Nuestro camino es construir" heroClass={styles.headerHero} />
         <HeroBanner />
         <MainSection />
       </>

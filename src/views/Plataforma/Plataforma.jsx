@@ -1,9 +1,7 @@
-//import React from "react";
 import { useEffect } from "react";
-
-import { Header } from "./components/Header";
 import { Main } from "./components/Main";
-import  styles  from "./styles/plataforma.module.scss";
+import styles from "./styles/plataforma.module.scss";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 
 export const Plataforma = () => {
   useEffect(() => {
@@ -11,7 +9,7 @@ export const Plataforma = () => {
   }, []);
   return (
     <div className={styles.containerPlatform}>
-      <Header />
+      <PageHeader showHero={false} />
       <Main />
     </div>
   );

@@ -171,11 +171,13 @@ export const Main = () => {
     };
   }, []);
 
-  const openModal = (candidate) => {
+  /*
+  const openModal = () => {
     // FUNCIÓN DESACTIVADA TEMPORALMENTE - Descomentar cuando esté la info completa
     // setSelectedCandidate(candidate);
     // document.body.style.overflow = "hidden";
   };
+  */
 
   const closeModal = () => {
     setSelectedCandidate(null);

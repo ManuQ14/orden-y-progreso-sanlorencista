@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
+import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useNavigate } from "react-router-dom";
 
